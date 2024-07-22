@@ -1,28 +1,29 @@
 "use client"; 
 import React, { useEffect, useRef, useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import Image from 'next/image';
 
 const cards = [
   {
-    imgSrc: '/image.png',
+    imgSrc: 'src/assets/image.png',
     title: 'Item Name',
     description: 'Lorem ipsum dolor',
     price: 2600
   },
   {
-    imgSrc: '/image.png',
+    imgSrc: 'src/assets/image.png',
     title: 'Item Name',
     description: 'Lorem ipsum dolor',
     price: 2600
   },
   {
-    imgSrc: '/image.png',
+    imgSrc: 'src/assets/image.png',
     title: 'Item Name',
     description: 'Lorem ipsum dolor',
     price: 2600
   },
   {
-    imgSrc: '/image.png',
+    imgSrc: 'src/assets/image.png',
     title: 'Item Name',
     description: 'Lorem ipsum dolor',
     price: 2600
