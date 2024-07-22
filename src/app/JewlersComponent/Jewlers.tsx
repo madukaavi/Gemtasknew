@@ -1,7 +1,8 @@
 "use client"; 
 import { FaEye } from "react-icons/fa"
- 
+import Image from 'next/image';
 const Jewlers = () => {
+
   return (
     <>
   <div className="flex w-full flex-col items-center justify-center mt-3">
@@ -37,7 +38,7 @@ const Jewlers = () => {
   <div className="flex gap-5 relative bottom-3  lg:bottom-0">
     <div className="w-[140px] h-[320px] lg:w-[200px] lg:h-[300px] shadow-lg z-30 rounded-md bg-gradient-to-t from-gray-200 to-transparent ">
     <img
-    src="/image.png"
+    src="https://s3-alpha-sig.figma.com/img/eb28/ed14/4a340896144a3bdb49af45b3ca0e7ee2?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IPp4myi0L7ipkgNonD4cpeynFlsayywR4XlOMcZzUDSeIobWIjBwcTIyaHCbZE-xA8y5z4P6lngElYjgGpI44YsVyDDAmzrsu6txYppIm7sOebtHIEcIyj275wPxECIlFI65SePpVWwiLcRQFBqK9DiqOD00ek6JxOiii93oph937nf4nILoaUGzUIPRtrzAUOZQGbwunvGtn~LWjNRPHMl5icJx0sC-w8m0Ogy2XpMu58kHHaJHwCw5fadBWQ-T3md2yjKej0QW33GE-QYAalgN~D4RmF~FvqLazQKkDvR2AhezNWrV9tMBm7Pv3Yj7khFSycH7rwWJyUbjGXFRLA__"
     alt="Card Image"
     className="w-[200px] h-[150px]  object-cover"
   />
@@ -52,7 +53,7 @@ const Jewlers = () => {
     </div>
     <div className="w-[140px] h-[320px] lg:w-[200px] lg:h-[300px] shadow-lg z-30  rounded-md bg-gradient-to-t from-gray-200 to-transparent ">
     <img
-    src="/image.png"
+    src="https://s3-alpha-sig.figma.com/img/eb28/ed14/4a340896144a3bdb49af45b3ca0e7ee2?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IPp4myi0L7ipkgNonD4cpeynFlsayywR4XlOMcZzUDSeIobWIjBwcTIyaHCbZE-xA8y5z4P6lngElYjgGpI44YsVyDDAmzrsu6txYppIm7sOebtHIEcIyj275wPxECIlFI65SePpVWwiLcRQFBqK9DiqOD00ek6JxOiii93oph937nf4nILoaUGzUIPRtrzAUOZQGbwunvGtn~LWjNRPHMl5icJx0sC-w8m0Ogy2XpMu58kHHaJHwCw5fadBWQ-T3md2yjKej0QW33GE-QYAalgN~D4RmF~FvqLazQKkDvR2AhezNWrV9tMBm7Pv3Yj7khFSycH7rwWJyUbjGXFRLA__"
     alt="Card Image"
     className="w-[200px] h-[150px]  object-cover"
   />
@@ -69,7 +70,7 @@ const Jewlers = () => {
     </div>
     <div className="relative w-full   h-[310px] overflow-hidden rounded-md shadow-md bottom-16 z-10 ">
   <img
-    src="/image2.jpg"
+    src="https://s3-alpha-sig.figma.com/img/b30b/fa3f/266c98b96164dabe95f5b047b3705e50?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=keqMWzyVUPIys6Gfm57FrSVpxSDXC4Uk9ctrLehxYcOLKaqAUe1apDKg1M4SU9vfaE2I4JWmSek~~1tF0Xtv33LEoKevWGPsUfnYO1s9ywsBQ2qhcxB0I1clRekZ6-QooOtKxmzRhL2~VmzVFuTKlkos1kMl7JVOX5xR5cm~shqqBnrIn8XL1~jZKHs0iYP5PbykjeZWOw0WVoQfi7qpom2yN4wCBJ26Wo5xJ1vm5DI2yIyS2Dlsgh7WppiDFc2-7oKISeN2mndHyknufZUaILOfd2yy6JJqykD57pp5TkNKfzsXQVlCC82sHYpkpUEmoZ7cxSYIDaqEwbW0hIN3qg__"
     alt="Card Image"
     className="w-full h-full object-cover"
   />

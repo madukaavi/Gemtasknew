@@ -1,74 +1,131 @@
-"use client";
-
-import React, { useState, useEffect } from 'react';
+"use client"; 
+import React, { useEffect, useRef, useState } from 'react';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import Image from 'next/image';
 
-const Slider: React.FC = () => {
-  const images = [
-    { src: '/Frame 23 (1).png', alt: 'Left Image' },
-    { src: '/Frame 23.png', alt: 'Middle Image' },
-    { src: '/Carsoul.png', alt: 'Right Image' }
-  ];
+const cards = [
+  {
+    imgSrc: 'https://s3-alpha-sig.figma.com/img/eb28/ed14/4a340896144a3bdb49af45b3ca0e7ee2?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IPp4myi0L7ipkgNonD4cpeynFlsayywR4XlOMcZzUDSeIobWIjBwcTIyaHCbZE-xA8y5z4P6lngElYjgGpI44YsVyDDAmzrsu6txYppIm7sOebtHIEcIyj275wPxECIlFI65SePpVWwiLcRQFBqK9DiqOD00ek6JxOiii93oph937nf4nILoaUGzUIPRtrzAUOZQGbwunvGtn~LWjNRPHMl5icJx0sC-w8m0Ogy2XpMu58kHHaJHwCw5fadBWQ-T3md2yjKej0QW33GE-QYAalgN~D4RmF~FvqLazQKkDvR2AhezNWrV9tMBm7Pv3Yj7khFSycH7rwWJyUbjGXFRLA__',
+    title: 'Item Name',
+    description: 'Lorem ipsum dolor',
+    price: 2600
+  },
+  {
+    imgSrc: 'https://s3-alpha-sig.figma.com/img/eb28/ed14/4a340896144a3bdb49af45b3ca0e7ee2?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IPp4myi0L7ipkgNonD4cpeynFlsayywR4XlOMcZzUDSeIobWIjBwcTIyaHCbZE-xA8y5z4P6lngElYjgGpI44YsVyDDAmzrsu6txYppIm7sOebtHIEcIyj275wPxECIlFI65SePpVWwiLcRQFBqK9DiqOD00ek6JxOiii93oph937nf4nILoaUGzUIPRtrzAUOZQGbwunvGtn~LWjNRPHMl5icJx0sC-w8m0Ogy2XpMu58kHHaJHwCw5fadBWQ-T3md2yjKej0QW33GE-QYAalgN~D4RmF~FvqLazQKkDvR2AhezNWrV9tMBm7Pv3Yj7khFSycH7rwWJyUbjGXFRLA__',
+    title: 'Item Name',
+    description: 'Lorem ipsum dolor',
+    price: 2600
+  },
+  {
+    imgSrc: 'https://s3-alpha-sig.figma.com/img/eb28/ed14/4a340896144a3bdb49af45b3ca0e7ee2?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IPp4myi0L7ipkgNonD4cpeynFlsayywR4XlOMcZzUDSeIobWIjBwcTIyaHCbZE-xA8y5z4P6lngElYjgGpI44YsVyDDAmzrsu6txYppIm7sOebtHIEcIyj275wPxECIlFI65SePpVWwiLcRQFBqK9DiqOD00ek6JxOiii93oph937nf4nILoaUGzUIPRtrzAUOZQGbwunvGtn~LWjNRPHMl5icJx0sC-w8m0Ogy2XpMu58kHHaJHwCw5fadBWQ-T3md2yjKej0QW33GE-QYAalgN~D4RmF~FvqLazQKkDvR2AhezNWrV9tMBm7Pv3Yj7khFSycH7rwWJyUbjGXFRLA__',
+    title: 'Item Name',
+    description: 'Lorem ipsum dolor',
+    price: 2600
+  },
+  {
+    imgSrc: 'https://s3-alpha-sig.figma.com/img/eb28/ed14/4a340896144a3bdb49af45b3ca0e7ee2?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IPp4myi0L7ipkgNonD4cpeynFlsayywR4XlOMcZzUDSeIobWIjBwcTIyaHCbZE-xA8y5z4P6lngElYjgGpI44YsVyDDAmzrsu6txYppIm7sOebtHIEcIyj275wPxECIlFI65SePpVWwiLcRQFBqK9DiqOD00ek6JxOiii93oph937nf4nILoaUGzUIPRtrzAUOZQGbwunvGtn~LWjNRPHMl5icJx0sC-w8m0Ogy2XpMu58kHHaJHwCw5fadBWQ-T3md2yjKej0QW33GE-QYAalgN~D4RmF~FvqLazQKkDvR2AhezNWrV9tMBm7Pv3Yj7khFSycH7rwWJyUbjGXFRLA__',
+    title: 'Item Name',
+    description: 'Lorem ipsum dolor',
+    price: 2600
+  },
+];
 
-  const [hoveredImage, setHoveredImage] = useState<string | null>(null);
+const ArrivalSlider: React.FC = () => {
+  const scrollContainer = useRef<HTMLDivElement>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handleMouseEnter = (imageSrc: string) => {
-    setHoveredImage(imageSrc);
-  };
-
-  const handleMouseLeave = () => {
-    setHoveredImage(null);
-  };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      setHoveredImage(images[(currentIndex + 1) % images.length].src);
-    }, 3000); // Change image every 3 seconds
+      if (scrollContainer.current) {
+        const containerWidth = scrollContainer.current.clientWidth;
+        const cardWidth = containerWidth / (cards.length > 0 ? cards.length : 1);
+        const newIndex = (currentIndex + 1) % cards.length;
+        scrollContainer.current.scrollTo({ left: newIndex * cardWidth, behavior: 'smooth' });
+        setCurrentIndex(newIndex);
+      }
+    }, 3000);
 
     return () => clearInterval(interval);
-  }, [currentIndex, images]);
+  }, [currentIndex]);
+
+  const scrollLeft = () => {
+    if (scrollContainer.current) {
+      const containerWidth = scrollContainer.current.clientWidth;
+      const cardWidth = containerWidth / (cards.length > 0 ? cards.length : 1);
+      const newIndex = Math.max(currentIndex - 1, 0);
+      scrollContainer.current.scrollTo({ left: newIndex * cardWidth, behavior: 'smooth' });
+      setCurrentIndex(newIndex);
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollContainer.current) {
+      const containerWidth = scrollContainer.current.clientWidth;
+      const cardWidth = containerWidth / (cards.length > 0 ? cards.length : 1);
+      const newIndex = Math.min(currentIndex + 1, cards.length - 1);
+      scrollContainer.current.scrollTo({ left: newIndex * cardWidth, behavior: 'smooth' });
+      setCurrentIndex(newIndex);
+    }
+  };
+
+  const handleDotClick = (index: number) => {
+    if (scrollContainer.current) {
+      const containerWidth = scrollContainer.current.clientWidth;
+      const cardWidth = containerWidth / (cards.length > 0 ? cards.length : 1);
+      scrollContainer.current.scrollTo({ left: index * cardWidth, behavior: 'smooth' });
+      setCurrentIndex(index);
+    }
+  };
 
   return (
-    <div className="w-full h-[300px] flex cursor-pointer items-center justify-center mt-4 space-x-4">
-      <div
-        className="relative w-1/4 h-full sm:block hidden"
-        onMouseEnter={() => handleMouseEnter(images[0].src)}
-        onMouseLeave={handleMouseLeave}
-      >
-        <Image
-          src={images[0].src}
-          alt={images[0].alt}
-          layout="fill"
-          objectFit="cover"
-          className="blur-sm opacity-70"
-        />
+    <div className="relative">
+      {/* Navigation buttons desktop view */}
+      <div className="hidden md:flex items-center justify-between absolute inset-y-0 left-0 z-10">
+        <button onClick={scrollLeft} className="p-2 text-pink-800 hidden lg:block">
+          <FaArrowLeft />
+        </button>
       </div>
-      <div className="relative w-[300px] lg:w-1/4 md:w-[250px] sm:w-[200px] h-full">
-        <Image
-          src={hoveredImage || images[1].src}
-          alt="Middle Image"
-          layout="fill"
-          objectFit="cover"
-          className="blur-none opacity-100"
-        />
+      <div className="flex overflow-x-scroll lg:overflow-x-hidden md:items-center md:justify-center space-x-4 px-4 py-8 snap-x snap-mandatory scrollbar-hidden" ref={scrollContainer}>
+        {cards.map((card, index) => (
+          <div key={index} className="flex-shrink-0 w-full md:w-[320px] h-[480px] rounded-md overflow-hidden shadow-lg snap-center relative group">
+            <Image className="w-full h-full object-cover transition duration-500 group-hover:blur-sm" src={card.imgSrc} alt={card.title} width={320} height={480} />
+            <div className="p-4">
+              <div className="font-bold font-sans text-md mb-1 text-center">{card.title}</div>
+              <p className="text-gray-700 text-sm font-light text-center">{card.description}</p>
+              <div className="flex justify-center mt-2 space-x-2">
+                <div className="w-4 h-4 bg-red-600 rounded-full cursor-pointer"></div>
+                <div className="w-4 h-4 bg-pink-800 rounded-full cursor-pointer"></div>
+                <div className="w-4 h-4 bg-green-800 rounded-full cursor-pointer"></div>
+              </div>
+              <p className="text-center mt-1 font-sans font-bold">Price: ${card.price}</p>
+            </div>
+            <div className="absolute inset-0 bg-gray-800 bg-opacity-50 flex flex-col items-center justify-center opacity-0 transition duration-500 group-hover:opacity-100">
+              <div className="flex flex-col space-y-2">
+                <button className="border-2 border-pink-600 text-pink-600 hover:bg-pink-800 hover:text-white py-2 px-4 rounded font-sans font-semibold transform translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300">BUY NOW</button>
+                <button className="bg-gradient-to-r hover:bg-pink-200 from-pink-500 to-pink-800 text-white py-2 px-4 rounded font-sans font-semibold transform translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
-      <div
-        className="relative w-1/4 lg:h-[300px] lg:w-1/4 md:h-[250px] cursor-pointer md:w-[250px] h-full sm:block hidden"
-        onMouseEnter={() => handleMouseEnter(images[2].src)}
-        onMouseLeave={handleMouseLeave}
-      >
-        <Image
-          src={images[2].src}
-          alt={images[2].alt}
-          layout="fill"
-          objectFit="cover"
-          className="blur-sm opacity-70"
-        />
+      {/* Navigation buttons desktop view */}
+      <div className="hidden md:flex items-center justify-between absolute inset-y-0 right-0 z-10">
+        <button onClick={scrollRight} className="p-2 hidden lg:block text-pink-800">
+          <FaArrowRight />
+        </button>
+      </div>
+      {/* Dots for mobile view */}
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2 mb-4 md:hidden">
+        {cards.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => handleDotClick(index)}
+            className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-pink-800' : 'bg-gray-300'}`}
+          />
+        ))}
       </div>
     </div>
   );
 };
 
-export default Slider;
+export default ArrivalSlider;
