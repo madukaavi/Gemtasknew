@@ -1,8 +1,14 @@
 // components/Card.js
 import Image from 'next/image';
+import { FC } from 'react';
 import { LuEye } from "react-icons/lu";
-
-const Cards = ({ imageSrc, heading1, heading2, buttonText }) => {
+interface CardsProps {
+  imageSrc: string;
+  heading1: string;
+  heading2: string;
+  buttonText: string;
+}
+const Cards: FC<CardsProps> = ({ imageSrc, heading1, heading2, buttonText }) => {
   return (
     <div className="relative w-[250px] h-96 rounded-lg overflow-hidden shadow-lg flex flex-col bg-white">
       <div className="absolute inset-0">
