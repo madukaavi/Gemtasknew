@@ -37,7 +37,7 @@ const CardSlider = () => {
   };
 
   return (
-    <div className="bg-white flex justify-center items-center px-5 relative">
+    <div className="bg-white flex justify-center items-center p-10 relative">
       {/* Mobile view with dots */}
       <div className="sm:hidden w-full flex flex-col items-center">
         <div className="w-full overflow-hidden">
