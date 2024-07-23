@@ -1,17 +1,16 @@
 "use client";
 
 import { useState, useRef, useEffect } from 'react';
-import Card from '../../app/CardSliderComponent/Cards'; // Ajustez le chemin si nécessaire
+import Card from '../../app/CardSliderComponent/Cards'; // Adjust the path if necessary
 
 const CardSlider = () => {
   const cards = [
-    { imageSrc: '/cardimage.jpg', heading1: 'Catagory', heading2: 'Catagory Name', buttonText: 'Go To Catgories' },
-    { imageSrc: '/image2.jpg', heading1: 'Catagory', heading2: 'Catagory Name', buttonText: 'Go To Catagories' },
-    { imageSrc: '/image2.jpg', heading1: 'Catagory', heading2: 'Catagory Name', buttonText: 'Go To Catagories' },
-    { imageSrc: '/image2.jpg', heading1: 'Heading 4', heading2: 'Catagory Name', buttonText: 'Go To Catagories' },
-    { imageSrc: '/image2.jpg', heading1: 'Heading 4', heading2: 'Catagory Name', buttonText: 'Go To Catagories' },
-    { imageSrc: '/image2.jpg', heading1: 'Heading 4', heading2: 'Catagory Name', buttonText: 'Go To Catagories' },
-
+    { imageSrc: '/cardimage.jpg', heading1: 'Category', heading2: 'Category Name', buttonText: 'Go To Categories' },
+    { imageSrc: '/image2.jpg', heading1: 'Category', heading2: 'Category Name', buttonText: 'Go To Categories' },
+    { imageSrc: '/image2.jpg', heading1: 'Category', heading2: 'Category Name', buttonText: 'Go To Categories' },
+    { imageSrc: '/image2.jpg', heading1: 'Heading 4', heading2: 'Category Name', buttonText: 'Go To Categories' },
+    { imageSrc: '/image2.jpg', heading1: 'Heading 4', heading2: 'Category Name', buttonText: 'Go To Categories' },
+    { imageSrc: '/image2.jpg', heading1: 'Heading 4', heading2: 'Category Name', buttonText: 'Go To Categories' },
   ];
 
   return (
@@ -22,14 +21,15 @@ const CardSlider = () => {
           <div key={index} className="flex-shrink-0 w-auto">
             <Card {...card} />
           </div>
-          
         ))}
       </div>
 
-      {/* Tablet and Desktop view with grid layout */}
-      <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[10px]">
+      {/* Tablet and Desktop view with horizontal scroll */}
+      <div className="hidden sm:flex overflow-x-auto space-x-6 hide-scrollbar">
         {cards.map((card, index) => (
-          <Card key={index} {...card} />
+          <div key={index} className="flex-shrink-0 w-auto">
+            <Card {...card} />
+          </div>
         ))}
       </div>
     </div>
