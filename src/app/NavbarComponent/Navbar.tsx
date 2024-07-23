@@ -46,7 +46,7 @@ const Navbar = () => {
   </div>
   <a href="#" className="font-inter font-semibold p-2 relative right-5 group">
     Home
-    <span className="block h-[0.6px] w-0 bg-customPink transition-all duration-300 group-hover:w-absolute bottom-0 left-0"></span>
+    <span className="block h-[0.6px] w-0 bg-customPink transition-all duration-300 "></span>
   </a>
   <a href="#" className="font-inter font-semibold p-2 relative right-8 flex items-center justify-center gap-1 group">
     Gem Education
