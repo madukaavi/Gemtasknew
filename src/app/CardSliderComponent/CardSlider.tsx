@@ -9,6 +9,9 @@ const CardSlider = () => {
     { imageSrc: '/image2.jpg', heading1: 'Catagory', heading2: 'Catagory Name', buttonText: 'Go To Catagories' },
     { imageSrc: '/image2.jpg', heading1: 'Catagory', heading2: 'Catagory Name', buttonText: 'Go To Catagories' },
     { imageSrc: '/image2.jpg', heading1: 'Heading 4', heading2: 'Catagory Name', buttonText: 'Go To Catagories' },
+    { imageSrc: '/image2.jpg', heading1: 'Heading 4', heading2: 'Catagory Name', buttonText: 'Go To Catagories' },
+    { imageSrc: '/image2.jpg', heading1: 'Heading 4', heading2: 'Catagory Name', buttonText: 'Go To Catagories' },
+
   ];
 
   return (
