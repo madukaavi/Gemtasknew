@@ -12,7 +12,7 @@ const CardSlider = () => {
   ];
 
   return (
-    <div className="bg-gray-100 flex justify-center items-center p-4">
+    <div className="bg-white flex justify-center items-center p-4">
       {/* Mobile view with horizontal scroll */}
       <div className="sm:hidden flex overflow-x-auto space-x-6">
         {cards.map((card, index) => (
