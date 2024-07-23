@@ -32,7 +32,7 @@ const TopHeader = () => {
           </div>
            
           {/* Call icon */}
-            <FiPhone className="w-4 h-4 ml-8 text-black hover:text-gray-800 hidden relative right-7 sm:block md:block " />
+            <FiPhone className="w-4 h-4 ml-8 text-black  hidden relative right-7 sm:block md:block " />
             <h4 className='font-sans text-sm font-semibold md:mr-2 md:block sm:block hidden relative right-7'>Contact</h4>
         </div>
       </div>
