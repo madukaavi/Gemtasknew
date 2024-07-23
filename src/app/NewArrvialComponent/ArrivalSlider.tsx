@@ -94,9 +94,9 @@ const ArrivalSlider: React.FC = () => {
               <div className="font-bold font-sans text-md mb-1 text-center">{card.title}</div>
               <p className="text-gray-700 text-sm font-light text-center">{card.description}</p>
               <div className="flex justify-center mt-2 space-x-2">
-                <div className="w-4 h-4 bg-red-600 rounded-full cursor-pointer"></div>
-                <div className="w-4 h-4 bg-pink-800 rounded-full cursor-pointer"></div>
-                <div className="w-4 h-4 bg-green-800 rounded-full cursor-pointer"></div>
+                <div className="w-4 h-4 bg-red-600  cursor-pointer"></div>
+                <div className="w-4 h-4 bg-pink-800  cursor-pointer"></div>
+                <div className="w-4 h-4 bg-green-800  cursor-pointer"></div>
               </div>
               <p className="text-center mt-1 font-sans font-bold">Price: ${card.price}</p>
             </div>
