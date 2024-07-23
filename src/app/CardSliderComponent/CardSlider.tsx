@@ -1,9 +1,8 @@
 "use client";
 
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import Card from '../../app/CardSliderComponent/Cards'; // Adjust the path if necessary
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'; // Import the arrow icons
-import { AiOutlineDot } from 'react-icons/ai'; // Import dot icon
 
 const CardSlider = () => {
   const cards = [
@@ -13,10 +12,11 @@ const CardSlider = () => {
     { imageSrc: '/image2.jpg', heading1: 'Heading 4', heading2: 'Category Name', buttonText: 'Go To Categories' },
     { imageSrc: '/image2.jpg', heading1: 'Heading 4', heading2: 'Category Name', buttonText: 'Go To Categories' },
     { imageSrc: '/image2.jpg', heading1: 'Heading 4', heading2: 'Category Name', buttonText: 'Go To Categories' },
+
   ];
 
+  // Specify the type as HTMLDivElement | null
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
@@ -30,31 +30,15 @@ const CardSlider = () => {
     }
   };
 
-  const goToSlide = (index: number) => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollTo({ left: index * scrollContainerRef.current.clientWidth, behavior: 'smooth' });
-    }
-    setCurrentIndex(index);
-  };
-
   return (
     <div className="bg-white flex justify-center items-center p-4 relative">
-      {/* Mobile view with dots */}
-      <div className="sm:hidden flex flex-col items-center space-y-4">
-        <div ref={scrollContainerRef} className="flex overflow-hidden space-x-6 w-full">
-          {cards.map((card, index) => (
-            <div key={index} className="flex-shrink-0 w-full">
-              <Card {...card} />
-            </div>
-          ))}
-        </div>
-        <div className="flex space-x-2">
-          {cards.map((_, index) => (
-            <button key={index} onClick={() => goToSlide(index)} className={`p-1 ${currentIndex === index ? 'text-blue-500' : 'text-gray-400'}`}>
-              <AiOutlineDot size={20} />
-            </button>
-          ))}
-        </div>
+      {/* Mobile view with horizontal scroll */}
+      <div className="sm:hidden flex overflow-x-auto space-x-6">
+        {cards.map((card, index) => (
+          <div key={index} className="flex-shrink-0 w-auto">
+            <Card {...card} />
+          </div>
+        ))}
       </div>
 
       {/* Tablet and Desktop view with horizontal scroll and arrows */}
