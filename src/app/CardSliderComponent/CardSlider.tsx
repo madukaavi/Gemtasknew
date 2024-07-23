@@ -14,7 +14,6 @@ const CardSlider = () => {
     { imageSrc: '/image2.jpg', heading1: 'Heading 4', heading2: 'Category Name', buttonText: 'Go To Categories' },
   ];
 
-  // Specify the type as HTMLDivElement | null
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -42,7 +41,11 @@ const CardSlider = () => {
       {/* Mobile view with dots */}
       <div className="sm:hidden w-full flex flex-col items-center">
         <div className="w-full overflow-hidden">
-          <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+          <div
+            ref={scrollContainerRef}
+            className="flex transition-transform duration-300 ease-in-out touch-none"
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          >
             {cards.map((card, index) => (
               <div key={index} className="flex-shrink-0 w-full">
                 <Card {...card} />
@@ -54,7 +57,7 @@ const CardSlider = () => {
           {cards.map((_, index) => (
             <button
               key={index}
-              className={`h-2 w-2 rounded-full ${index === currentIndex ? 'bg-customPink' : 'bg-customPink'}`}
+              className={`h-2 w-2 rounded-full ${index === currentIndex ? 'bg-blue-500' : 'bg-gray-300'}`}
               onClick={() => handleDotClick(index)}
             />
           ))}
