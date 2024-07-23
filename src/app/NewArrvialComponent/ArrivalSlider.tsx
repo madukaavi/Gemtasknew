@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import Image from 'next/image';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const cards = [
   {
@@ -95,7 +96,7 @@ const ArrivalSlider: React.FC = () => {
       {/* Navigation buttons desktop view */}
       <div className="hidden md:flex items-center justify-between absolute inset-y-0 left-14 z-10">
         <button onClick={scrollLeft} className="p-2 text-pink-800 hidden lg:block ">
-          <FaArrowLeft />
+          <IoIosArrowBack size={30}/>
         </button>
       </div>
       <div className="flex overflow-x-scroll lg:overflow-x-hidden md:items-center md:justify-center space-x-4 px-4 py-8 snap-x snap-mandatory scrollbar-hidden" ref={scrollContainer}>
@@ -103,14 +104,14 @@ const ArrivalSlider: React.FC = () => {
           <div key={index} className="flex-shrink-0 w-full md:w-[200px] h-[380px] rounded-md overflow-hidden shadow-lg snap-center relative group">
             <img className="w-full h-1/1 object-cover transition duration-500 group-hover:blur-sm" src={card.imgSrc} alt={card.title} />
             <div className="p-4">
-              <div className="font-bold font-sans text-md mb-1 text-center">{card.title}</div>
-              <p className="text-gray-700 text-sm font-light text-center">{card.description}</p>
+              <div className="font-bold font-inter text-md mb-1 text-center">{card.title}</div>
+              <p className="text-gray-700 text-sm font-inter font-light text-center">{card.description}</p>
               <div className="flex justify-center mt-2 space-x-2">
                 <div className="w-4 h-4 bg-red-600  cursor-pointer"></div>
                 <div className="w-4 h-4 bg-pink-800  cursor-pointer"></div>
                 <div className="w-4 h-4 bg-green-800  cursor-pointer"></div>
               </div>
-              <p className="text-center mt-1 font-sans font-bold">Price: ${card.price}</p>
+              <p className="text-center mt-1 font-inter font-bold">Price: ${card.price}</p>
             </div>
             <div className="absolute inset-0 bg-gray-800 bg-opacity-50 flex flex-col items-center justify-center opacity-0 transition duration-500 group-hover:opacity-100">
               <div className="flex flex-col space-y-2">
@@ -124,7 +125,7 @@ const ArrivalSlider: React.FC = () => {
       {/* Navigation buttons desktop view */}
       <div className="hidden md:flex items-center justify-between absolute inset-y-0 right-24 z-10">
         <button onClick={scrollRight} className="p-2 hidden lg:block text-pink-800">
-          <FaArrowRight />
+          <IoIosArrowForward  className='relative' width={30} />
         </button>
       </div>
       {/* Dots for mobile view */}
