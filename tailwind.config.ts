@@ -11,12 +11,15 @@ const config: Config = {
       colors: {
         'custom-blue': 'rgb(220, 248, 239,0.4)',
         'custom-purple': 'rgb(254, 226, 248, 0.4)',
-        
           'customPink': 'rgba(241, 39, 97, 1)',
 
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
+      },
+
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(90deg, #F12761 -100.67%, #740E4C 161.17%)',
       },
       
     },
