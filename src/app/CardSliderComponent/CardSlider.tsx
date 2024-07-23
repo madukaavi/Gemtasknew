@@ -57,7 +57,7 @@ const CardSlider = () => {
           {cards.map((_, index) => (
             <button
               key={index}
-              className={`h-2 w-2 rounded-full ${index === currentIndex ? 'bg-customPink' : 'border-customPink border-2'}`}
+              className={`h-2 w-2 rounded-full border-[1px] ${index === currentIndex ? 'bg-customPink' : 'bg-transparent'}`}
               onClick={() => handleDotClick(index)}
             />
           ))}
