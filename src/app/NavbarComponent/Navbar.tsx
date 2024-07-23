@@ -38,23 +38,17 @@ const Navbar = () => {
             <div className="relative right-2">
               <button
                 onClick={toggleDropdown}
-                className="flex items-center relative gap-2 p-2 hover:text-pink-500 font-sans font-semibold text-white bg-pink-700 rounded-full"
+                className="flex items-center relative gap-2 p-2  font-sans font-semibold text-white bg-customPink rounded-full"
               >
-                Shop <IoIosArrowDown />
+                Shop <IoIosArrowDown className='ml-1 transition-transform duration-300 group-hover:rotate-180' />
               </button>
-              {dropdownOpen && (
-                <div className="absolute left-0 mt-2 p-2 w-48 bg-white shadow-lg border rounded-md z-50">
-                  <a href="#" className="px-4 py-2 text-gray-700 hover:bg-pink-500 hover:rounded-full hover:text-white font-sans font-medium items-center justify-center flex gap-2 hover:shadow-sm"><FaGem />Gem Name</a>
-                  <a href="#" className="px-4 py-2 text-gray-700 hover:bg-pink-500 hover:rounded-full hover:text-white font-sans font-medium items-center justify-center flex gap-2 hover:shadow-sm"><FaGem />Gem Name</a>
-                  <a href="#" className="px-4 py-2 text-gray-700 hover:bg-pink-500 hover:rounded-full hover:text-white font-sans font-medium items-center justify-center flex gap-2 hover:shadow-sm"><FaGem />Gem Name</a>
-                </div>
-              )}
+              
             </div>
-            <a href="#" className="hover:text-pink-500 font-sans font-semibold p-2 relative right-5">Home</a>
-            <a href="#" className="hover:text-pink-500 font-sans font-semibold p-2 relative right-8 flex items-center justify-center gap-1">Gem Education <IoIosArrowDown /></a>
-            <a href="#" className="hover:text-pink-500 font-sans font-semibold p-2 relative right-8 flex items-center justify-center gap-1">Gem History <IoIosArrowDown /></a>
-            <a href="#" className="hover:text-pink-500 font-semibold font-sans p-2 relative right-8">About us</a>
-            <a href="#" className="hover:text-pink-500 font-semibold font-sans p-2 relative right-8">Contact Us</a>
+            <a href="#" className=" font-sans font-semibold p-2 relative right-5  hover:text-customPink transition-colors duration-300">Home</a>
+            <a href="#" className=" font-sans font-semibold p-2 relative right-8 flex items-center justify-center gap-1">Gem Education <IoIosArrowDown className='ml-1 transition-transform duration-300 group-hover:rotate-180'/></a>
+            <a href="#" className=" font-sans font-semibold p-2 relative right-8 flex items-center justify-center gap-1">Gem History <IoIosArrowDown className='ml-1 transition-transform duration-300 group-hover:rotate-180'/></a>
+            <a href="#" className=" font-semibold font-sans p-2 relative right-8">About us</a>
+            <a href="#" className=" font-semibold font-sans p-2 relative right-8">Contact Us</a>
           </div>
 
           {/* Right side icons for desktop */}
