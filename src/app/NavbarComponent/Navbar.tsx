@@ -44,11 +44,11 @@ const Navbar = () => {
               </button>
               
             </div>
-            <a href="#" className="navlink font-inter font-semibold p-2 relative right-5 ">Home </a>
-            <a href="#" className="navlink font-inter font-semibold p-2 relative right-8 flex items-center justify-center gap-1">Gem Education <IoIosArrowDown className='navlink-arrow' /></a>
-            <a href="#" className="navlink font-inter font-semibold p-2 relative right-8 flex items-center justify-center gap-1">Gem History <IoIosArrowDown className='navlink-arrow' /></a>
-            <a href="#" className="navlink font-inter p-2 relative right-8 font-semibold">About us </a>
-            <a href="#" className="navlink font-inter  p-2 relative right-8 font-semibold">Contact Us</a>
+            <a href="#" className="font-inter font-semibold p-2 relative right-5 ">Home </a>
+            <a href="#" className=" font-inter font-semibold p-2 relative right-8 flex items-center justify-center gap-1">Gem Education <IoIosArrowDown className='navlink-arrow' /></a>
+            <a href="#" className=" font-inter font-semibold p-2 relative right-8 flex items-center justify-center gap-1">Gem History <IoIosArrowDown className='navlink-arrow' /></a>
+            <a href="#" className=" font-inter p-2 relative right-8 font-semibold">About us </a>
+            <a href="#" className=" font-inter  p-2 relative right-8 font-semibold">Contact Us</a>
           </div>
 
           {/* Right side icons for desktop */}
