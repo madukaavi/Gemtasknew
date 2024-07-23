@@ -47,7 +47,7 @@ const CardSlider = () => {
           className="absolute left-0 z-10 p-2 bg-gray-200 rounded-full"
           onClick={scrollLeft}
         >
-          <IoIosArrowBack size={24} />
+          <IoIosArrowBack size={30} className='relative left-9' />
         </button>
         <div
           ref={scrollContainerRef}
