@@ -10,6 +10,9 @@ const CardSlider = () => {
     { imageSrc: '/image2.jpg', heading1: 'Category', heading2: 'Category Name', buttonText: 'Go To Categories' },
     { imageSrc: '/image2.jpg', heading1: 'Category', heading2: 'Category Name', buttonText: 'Go To Categories' },
     { imageSrc: '/image2.jpg', heading1: 'Heading 4', heading2: 'Category Name', buttonText: 'Go To Categories' },
+    { imageSrc: '/image2.jpg', heading1: 'Heading 4', heading2: 'Category Name', buttonText: 'Go To Categories' },
+    { imageSrc: '/image2.jpg', heading1: 'Heading 4', heading2: 'Category Name', buttonText: 'Go To Categories' },
+
   ];
 
   // Specify the type as HTMLDivElement | null
