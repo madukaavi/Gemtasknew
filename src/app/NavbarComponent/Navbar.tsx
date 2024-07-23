@@ -35,21 +35,38 @@ const Navbar = () => {
 
           {/* Nav links for desktop */}
           <div className="hidden lg:flex space-x-6">
-            <div className="relative right-2">
-              <button
-                onClick={toggleDropdown}
-                className="flex items-center relative gap-2 p-2  font-inter font-semibold text-white bg-customPink rounded-full"
-              >
-                Shop <IoIosArrowDown className='ml-1 transition-transform duration-300 group-hover:rotate-180' />
-              </button>
-              
-            </div>
-            <a href="#" className="font-inter font-semibold p-2 relative right-5 ">Home </a>
-            <a href="#" className=" font-inter font-semibold p-2 relative right-8 flex items-center justify-center gap-1">Gem Education <IoIosArrowDown className='navlink-arrow' /></a>
-            <a href="#" className=" font-inter font-semibold p-2 relative right-8 flex items-center justify-center gap-1">Gem History <IoIosArrowDown className='navlink-arrow' /></a>
-            <a href="#" className=" font-inter p-2 relative right-8 font-semibold">About us </a>
-            <a href="#" className=" font-inter  p-2 relative right-8 font-semibold">Contact Us</a>
-          </div>
+  <div className="relative right-2">
+    <button
+      onClick={toggleDropdown}
+      className="flex items-center relative gap-2 p-2 font-inter font-semibold text-white bg-customPink rounded-full group"
+    >
+      Shop
+      <IoIosArrowDown className='ml-1 transition-transform duration-300 group-hover:rotate-180' />
+    </button>
+  </div>
+  <a href="#" className="font-inter font-semibold p-2 relative right-5 group">
+    Home
+    <span className="block h-1 w-0 bg-customPink transition-all duration-300 group-hover:w-full"></span>
+  </a>
+  <a href="#" className="font-inter font-semibold p-2 relative right-8 flex items-center justify-center gap-1 group">
+    Gem Education
+    <IoIosArrowDown className='navlink-arrow transition-transform duration-300 group-hover:rotate-180' />
+    <span className="block h-1 w-0 bg-customPink transition-all duration-300 group-hover:w-full absolute bottom-0 left-0"></span>
+  </a>
+  <a href="#" className="font-inter font-semibold p-2 relative right-8 flex items-center justify-center gap-1 group">
+    Gem History
+    <IoIosArrowDown className='navlink-arrow transition-transform duration-300 group-hover:rotate-180' />
+    <span className="block h-1 w-0 bg-customPink transition-all duration-300 group-hover:w-full absolute bottom-0 left-0"></span>
+  </a>
+  <a href="#" className="font-inter p-2 relative right-8 font-semibold group">
+    About us
+    <span className="block h-1 w-0 bg-customPink transition-all duration-300 group-hover:w-full absolute bottom-0 left-0"></span>
+  </a>
+  <a href="#" className="font-inter p-2 relative right-8 font-semibold group">
+    Contact Us
+    <span className="block h-1 w-0 bg-customPink transition-all duration-300 group-hover:w-full absolute bottom-0 left-0"></span>
+  </a>
+</div>
 
           {/* Right side icons for desktop */}
           <div className="hidden lg:flex space-x-4 items-center">
