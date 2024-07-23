@@ -7,6 +7,7 @@ import ArrivalSlider from "./NewArrvialComponent/ArrivalSlider";
 import Services from "./ServicesComponent/Services";
 import BannerBox from "./BnnerBoxComponent/Bannerbox";
 import Footer from "./FooterComponent/Footer";
+import AllProduct from "./AllProductComponent/AllProduct";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
     <CardSlider/>
     <NewArrvial/>
     <Jewlers/>
+    <AllProduct/>
     <ArrivalSlider/>
     <ArrivalSlider/>
     <ArrivalSlider/>
