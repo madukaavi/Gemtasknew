@@ -15,6 +15,9 @@ const config: Config = {
           'customPink': 'rgba(241, 39, 97, 1)',
 
       },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
       
     },
   },

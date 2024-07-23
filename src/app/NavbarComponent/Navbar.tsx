@@ -38,40 +38,40 @@ const Navbar = () => {
             <div className="relative right-2">
               <button
                 onClick={toggleDropdown}
-                className="flex items-center relative gap-2 p-2  font-sans font-semibold text-white bg-customPink rounded-full"
+                className="flex items-center relative gap-2 p-2  font-inter font-semibold text-white bg-customPink rounded-full"
               >
                 Shop <IoIosArrowDown className='ml-1 transition-transform duration-300 group-hover:rotate-180' />
               </button>
               
             </div>
-            <a href="#" className=" font-sans font-semibold p-2 relative right-5  hover:text-customPink transition-colors duration-300">Home</a>
-            <a href="#" className=" font-sans font-semibold p-2 relative right-8 flex items-center justify-center gap-1">Gem Education <IoIosArrowDown className='ml-1 transition-transform duration-300 group-hover:rotate-180'/></a>
-            <a href="#" className=" font-sans font-semibold p-2 relative right-8 flex items-center justify-center gap-1">Gem History <IoIosArrowDown className='ml-1 transition-transform duration-300 group-hover:rotate-180'/></a>
-            <a href="#" className=" font-semibold font-sans p-2 relative right-8">About us</a>
-            <a href="#" className=" font-semibold font-sans p-2 relative right-8">Contact Us</a>
+            <a href="#" className=" font-inter font-semibold p-2 relative right-5  transition-colors duration-300">Home <span className="absolute left-0 bottom-0 w-full h-[0.6] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></a>
+            <a href="#" className=" font-inter font-semibold p-2 relative right-8 flex items-center justify-center gap-1">Gem Education <IoIosArrowDown className='ml-1 transition-transform duration-300 group-hover:rotate-180'/><span className="absolute left-0 bottom-0 w-full h-[0.6] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></a>
+            <a href="#" className=" font-inter font-semibold p-2 relative right-8 flex items-center justify-center gap-1">Gem History <IoIosArrowDown className='ml-1 transition-transform duration-300 group-hover:rotate-180'/><span className="absolute left-0 bottom-0 w-full h-[0.6] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></a>
+            <a href="#" className=" font-inter p-2 relative right-8">About us <span className="absolute left-0 bottom-0 w-full h-[0.6] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></a>
+            <a href="#" className=" font-inter  p-2 relative right-8">Contact Us<span className="absolute left-0 bottom-0 w-full h-[0.6] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></a>
           </div>
 
           {/* Right side icons for desktop */}
           <div className="hidden lg:flex space-x-4 items-center">
-            <div className="box flex justify-center items-center w-[30px] h-[30px] bg-pink-700 rounded-full">
+            <div className="box flex justify-center items-center w-[30px] h-[30px] bg-customPink rounded-full">
               <IoIosSearch className="text-lg cursor-pointer text-white" />
             </div>
-            <div className="box flex justify-center items-center w-[30px] h-[30px] bg-pink-700 rounded-full">
+            <div className="box flex justify-center items-center w-[30px] h-[30px] bg-customPink rounded-full">
               <FaUser className="text-lg cursor-pointer text-white" />
             </div>
-            <div className="box flex justify-center items-center w-[30px] h-[30px] bg-pink-700 rounded-full">
+            <div className="box flex justify-center items-center w-[30px] h-[30px] bg-customPink rounded-full">
               <GoPerson className="text-lg cursor-pointer text-white" />
             </div>
-            <button className="flex items-center justify-center border-[1px] border-pink-700 gap-2 w-auto p-2 h-10 rounded-full bg-none text-[8px] font-bold font-sans text-black cursor-pointer">
-              Cart: no Items <div className="box w-8 h-8 flex items-center justify-center bg-pink-700 rounded-full"><MdOutlineShoppingCart className='text-lg text-white' /></div>
+            <button className="flex items-center justify-center border-[1px] border-customPink gap-2 w-auto p-2 h-10 rounded-full bg-none text-[8px] font-bold font-inter text-black cursor-pointer">
+              Cart: no Items <div className="box w-8 h-8 flex items-center justify-center bg-customPink rounded-full"><MdOutlineShoppingCart className='text-lg text-white' /></div>
             </button>
           </div>
 
           {/* Icons for mobile and tablet */}
           <div className="lg:hidden flex justify-end items-center space-x-4">
-            <IoIosSearch className="text-md cursor-pointer text-pink-700" />
-            <GoPerson className="text-md cursor-pointer text-pink-700" />
-            <MdOutlineShoppingCart className="text-md cursor-pointer text-pink-700" />
+            <IoIosSearch className="text-md cursor-pointer text-customPink" />
+            <GoPerson className="text-md cursor-pointer text-customPink" />
+            <MdOutlineShoppingCart className="text-md cursor-pointer text-customPink" />
             {/* Hamburger menu for mobile and tablet */}
             <button onClick={toggleMenu}>
               <FaBars className="text-md text-black" />
@@ -86,23 +86,17 @@ const Navbar = () => {
           &times;
         </button>
         <div className="p-4">
-          <a href="#" className="block px-4 py-2 hover:bg-gray-100 hover:rounded-full font-sans font-semibold">Contact Us</a>
-          <a href="#" className="block px-4 py-2 hover:bg-gray-100 hover:rounded-full font-sans font-semibold">About Us</a>
-          <a href="#" className="block px-4 py-2 hover:bg-gray-100 hover:rounded-full font-sans font-semibold">Gem History</a>
-          <a href="#" className="block px-4 py-2 hover:bg-gray-100 hover:rounded-full font-sans font-semibold">Gem Education</a>
+          <a href="#" className="block px-4 py-2   font-inter font-semibold">Contact Us<span className="absolute left-0 bottom-0 w-full h-[0.6] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></a>
+          <a href="#" className="block px-4 py-2   font-inter font-semibold">About Us<span className="absolute left-0 bottom-0 w-full h-[0.6] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></a>
+          <a href="#" className="block px-4 py-2   font-inter font-semibold">Gem History<span className="absolute left-0 bottom-0 w-full h-[0.6] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></a>
+          <a href="#" className="block px-4 py-2   font-inter font-semibold">Gem Education<span className="absolute left-0 bottom-0 w-full h-[0.6] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></a>
           <button
             onClick={toggleDropdown}
-            className="block px-4 py-2 font-semibold text-left w-full hover:bg-gray-100 hover:rounded-full"
+            
           >
-            Shop <span className="ml-2 font-semibold font-sans"><IoIosArrowDown /></span>
+            Shop <span className="ml-2 font-semibold font-sans"><IoIosArrowDown /><span className="absolute left-0 bottom-0 w-full h-[0.6] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></span>
           </button>
-          {dropdownOpen && (
-            <div className="bg-white shadow-lg border-gray-200 mt-2 p-2">
-              <a href="#" className="px-4 py-2 hover:bg-gray-100 hover:rounded-full font-sans font-semibold flex justify-center items-center gap-2"><FaGem />Gem Name</a>
-              <a href="#" className="px-4 py-2 hover:bg-gray-100 hover:rounded-full font-sans font-semibold flex justify-center items-center gap-2"><FaGem />Gem Name</a>
-              <a href="#" className="px-4 py-2 hover:bg-gray-100 hover:rounded-full font-sans font-semibold flex justify-center items-center gap-2"><FaGem />Gem Name</a>
-            </div>
-          )}
+          
         </div>
       </div>
     </>

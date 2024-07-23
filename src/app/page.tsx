@@ -7,6 +7,7 @@ import ArrivalSlider from "./NewArrvialComponent/ArrivalSlider";
 import Services from "./ServicesComponent/Services";
 import BannerBox from "./BnnerBoxComponent/Bannerbox";
 import Footer from "./FooterComponent/Footer";
+
 export default function Home() {
   return (
     <>
