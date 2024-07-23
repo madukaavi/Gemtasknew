@@ -1,7 +1,7 @@
 // components/Card.js
 import Image from 'next/image';
 import { FC } from 'react';
-import { LuEye } from "react-icons/lu";
+import { AiOutlineGlobal } from "react-icons/ai";
 interface CardsProps {
   imageSrc: string;
   heading1: string;
@@ -17,8 +17,8 @@ const Cards: FC<CardsProps> = ({ imageSrc, heading1, heading2, buttonText }) => 
       <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-end p-4">
         <h2 className="text-md font-inter font-bold text-black">{heading1}</h2>
         <h3 className="text-xl font-inter font-bold text-black">{heading2}</h3>
-        <button className="w-full bg-gradient-to-r from-customPink to-custompinknew text-white rounded-full py-2 mt-4 flex items-center justify-center">
-         {buttonText} <LuEye className="relative left-4" />
+        <button className="w-full bg-gradient-to-r from-customPink to-custompinknew text-white font-inter rounded-full py-2 mt-4 flex items-center justify-center">
+         {buttonText} <AiOutlineGlobal className="relative left-4" />
         </button>
       </div>
     </div>
