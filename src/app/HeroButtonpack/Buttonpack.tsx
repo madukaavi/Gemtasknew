@@ -10,7 +10,7 @@ function Buttonpack() {
       <button className="bg-custom-gradient text-white py-2 font-inter font-light px-4 mr-1  hover:bg-pink-600">
        EXPLORE MORE
       </button>
-      <button className="border-2 font-inter  border-customPink font-semibold ml-1  text-customPink py-2 px-4">
+      <button className="border-[1px] font-inter  border-customPink font-semibold ml-1  text-customPink py-2 px-4">
        LEARN MORE
       </button>
       </div>
