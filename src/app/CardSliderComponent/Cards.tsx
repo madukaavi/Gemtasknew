@@ -10,7 +10,7 @@ interface CardsProps {
 }
 const Cards: FC<CardsProps> = ({ imageSrc, heading1, heading2, buttonText }) => {
   return (
-    <div className="relative lg:w-[240px] w-[250px] h-[234px] lg:h-96 rounded-lg overflow-hidden shadow-lg flex flex-col bg-white">
+    <div className="relative lg:w-[260px] w-[250px] h-[234px] lg:h-96 rounded-lg overflow-hidden shadow-lg flex flex-col bg-white">
       <div className="absolute inset-0">
         <Image src={imageSrc} alt="Card Image" layout="fill" objectFit="cover" />
       </div>
