@@ -60,10 +60,10 @@ const CardSlider = () => {
           ))}
         </div>
         <button
-          className="absolute right-0 z-10 p-2 bg-gray-200 rounded-full"
+          className="absolute right-0 z-10 p-2 "
           onClick={scrollRight}
         >
-          <IoIosArrowForward size={24} />
+          <IoIosArrowForward size={30} className=' relative right-12' />
         </button>
       </div>
     </div>
