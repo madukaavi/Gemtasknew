@@ -26,7 +26,7 @@ const TopHeader = () => {
         <div className="ml-auto flex items-center gap-1 md:gap-2">
           {/* Currency button with dropdown */}
           <div className="relative hidden md:block sm:block ml-2 right-5">
-            <button className="border-black font-inter text-sm border font-semibold rounded-full py-1 px-3 bg-transparent  flex items-center hover:bg-gray-200 hover:text-gray-800">
+            <button className="border-black font-inter text-sm border font-semibold rounded-full py-1 px-3 bg-transparent  flex items-center  ">
               USD <FiChevronDown className="ml-1" />
             </button>
           </div>
