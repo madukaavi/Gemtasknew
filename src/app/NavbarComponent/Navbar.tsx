@@ -59,7 +59,7 @@ const Navbar = () => {
     <span className="block h-[0.6px] w-0 bg-customPink transition-all duration-300 group-hover:w-full absolute bottom-0 left-0"></span>
   </a>
   <a href="#" className="font-inter p-2 relative right-8 font-semibold group">
-    About us
+    About Us
     <span className="block h-[0.6px] w-0 bg-customPink transition-all duration-300 group-hover:w-full absolute bottom-0 left-0"></span>
   </a>
   <a href="#" className="font-inter p-2 relative right-8 font-semibold group">
