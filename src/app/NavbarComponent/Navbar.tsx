@@ -46,25 +46,25 @@ const Navbar = () => {
   </div>
   <a href="#" className="font-inter font-semibold p-2 relative right-5 group">
     Home
-    <span className="block h-1 w-0 bg-customPink transition-all duration-300 group-hover:w-full"></span>
+    <span className="block h-[0.6px] w-0 bg-customPink transition-all duration-300 group-hover:w-full"></span>
   </a>
   <a href="#" className="font-inter font-semibold p-2 relative right-8 flex items-center justify-center gap-1 group">
     Gem Education
     <IoIosArrowDown className='navlink-arrow transition-transform duration-300 group-hover:rotate-180' />
-    <span className="block h-1 w-0 bg-customPink transition-all duration-300 group-hover:w-full absolute bottom-0 left-0"></span>
+    <span className="block h-[0.6px] w-0 bg-customPink transition-all duration-300 group-hover:w-full absolute bottom-0 left-0"></span>
   </a>
   <a href="#" className="font-inter font-semibold p-2 relative right-8 flex items-center justify-center gap-1 group">
     Gem History
     <IoIosArrowDown className='navlink-arrow transition-transform duration-300 group-hover:rotate-180' />
-    <span className="block h-1 w-0 bg-customPink transition-all duration-300 group-hover:w-full absolute bottom-0 left-0"></span>
+    <span className="block h-[0.6px] w-0 bg-customPink transition-all duration-300 group-hover:w-full absolute bottom-0 left-0"></span>
   </a>
   <a href="#" className="font-inter p-2 relative right-8 font-semibold group">
     About us
-    <span className="block h-1 w-0 bg-customPink transition-all duration-300 group-hover:w-full absolute bottom-0 left-0"></span>
+    <span className="block h-[0.6px] w-0 bg-customPink transition-all duration-300 group-hover:w-full absolute bottom-0 left-0"></span>
   </a>
   <a href="#" className="font-inter p-2 relative right-8 font-semibold group">
     Contact Us
-    <span className="block h-1 w-0 bg-customPink transition-all duration-300 group-hover:w-full absolute bottom-0 left-0"></span>
+    <span className="block h-[0.6px] w-0 bg-customPink transition-all duration-300 group-hover:w-full absolute bottom-0 left-0"></span>
   </a>
 </div>
 
