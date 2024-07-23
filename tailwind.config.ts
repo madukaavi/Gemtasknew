@@ -8,7 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
+      screens: {
+        'mobile-320': {'max': '320px'},
+      },
       colors: {
         'custom-blue': 'rgb(220, 248, 239,0.4)',
         'custom-purple': 'rgb(254, 226, 248, 0.4)',
