@@ -44,10 +44,10 @@ const CardSlider = () => {
       {/* Tablet and Desktop view with horizontal scroll and arrows */}
       <div className="hidden sm:flex items-center relative w-full px-28">
         <button
-          className="absolute left-0 z-10 p-2 bg-gray-200 rounded-full"
+          className="absolute left-0 z-10 p-2 "
           onClick={scrollLeft}
         >
-          <IoIosArrowBack size={30} className='relative left-9' />
+          <IoIosArrowBack size={30} className='relative left-12' />
         </button>
         <div
           ref={scrollContainerRef}
