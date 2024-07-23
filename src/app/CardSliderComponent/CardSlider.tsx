@@ -42,7 +42,7 @@ const CardSlider = () => {
       </div>
 
       {/* Tablet and Desktop view with horizontal scroll and arrows */}
-      <div className="hidden sm:flex items-center relative w-full px-24">
+      <div className="hidden sm:flex items-center relative w-full px-28">
         <button
           className="absolute left-0 z-10 p-2 bg-gray-200 rounded-full"
           onClick={scrollLeft}
