@@ -12,7 +12,8 @@ const CardSlider = () => {
     { imageSrc: '/image2.jpg', heading1: 'Heading 4', heading2: 'Category Name', buttonText: 'Go To Categories' },
   ];
 
-  const scrollContainerRef = useRef(null);
+  // Specify the type as HTMLDivElement | null
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
