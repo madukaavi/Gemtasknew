@@ -26,13 +26,13 @@ const TopHeader = () => {
         <div className="ml-auto flex items-center gap-6 md:gap-2">
           {/* Currency button with dropdown */}
           <div className="relative hidden md:block sm:block ml-2 right-5">
-            <button className="border-black border font-bold rounded-full py-2 px-4 bg-transparent text-black flex items-center hover:bg-gray-200 hover:text-gray-800">
+            <button className="border-black font-inter text-sm border font-semibold rounded-full py-1 px-3 bg-transparent  flex items-center hover:bg-gray-200 hover:text-gray-800">
               USD <FiChevronDown className="ml-1" />
             </button>
           </div>
            
           {/* Call icon */}
-            <FiPhone className="w-6 h-6 ml-8 text-black hover:text-gray-800 hidden relative right-7 sm:block md:block " />
+            <FiPhone className="w-3 h-3 ml-8 text-black hover:text-gray-800 hidden relative right-7 sm:block md:block " />
             <h4 className='font-sans text-sm font-semibold md:mr-2 md:block sm:block hidden relative right-7'>Contact</h4>
         </div>
       </div>
