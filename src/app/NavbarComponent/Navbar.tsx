@@ -44,11 +44,26 @@ const Navbar = () => {
               </button>
               
             </div>
-            <a href="#" className=" font-inter font-semibold p-2 relative right-5  transition-colors duration-300">Home <span className="absolute left-0 bottom-0 w-full h-[0.6] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></a>
-            <a href="#" className=" font-inter font-semibold p-2 relative right-8 flex items-center justify-center gap-1">Gem Education <IoIosArrowDown className='ml-1 transition-transform duration-300 group-hover:rotate-180'/><span className="absolute left-0 bottom-0 w-full h-[0.6] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></a>
-            <a href="#" className=" font-inter font-semibold p-2 relative right-8 flex items-center justify-center gap-1">Gem History <IoIosArrowDown className='ml-1 transition-transform duration-300 group-hover:rotate-180'/><span className="absolute left-0 bottom-0 w-full h-[0.6] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></a>
-            <a href="#" className=" font-inter p-2 relative right-8">About us <span className="absolute left-0 bottom-0 w-full h-[0.6] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></a>
-            <a href="#" className=" font-inter  p-2 relative right-8">Contact Us<span className="absolute left-0 bottom-0 w-full h-[0.6] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></a>
+            <a href="#" className="relative group font-inter font-semibold p-2 right-5 text-gray-700 hover:text-pink-600 transition-colors duration-300">
+            Home
+            <span className="absolute left-0 bottom-0 w-full h-[0.6px] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+          </a>
+          <a href="#" className="relative group font-inter font-semibold p-2 right-8 flex items-center justify-center gap-1 text-gray-700 hover:text-pink-600 transition-colors duration-300">
+            Gem Education <IoIosArrowDown className="ml-1 transition-transform duration-300 group-hover:rotate-180" />
+            <span className="absolute left-0 bottom-0 w-full h-[0.6px] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+          </a>
+          <a href="#" className="relative group font-inter font-semibold p-2 right-8 flex items-center justify-center gap-1 text-gray-700 hover:text-pink-600 transition-colors duration-300">
+            Gem History <IoIosArrowDown className="ml-1 transition-transform duration-300 group-hover:rotate-180" />
+            <span className="absolute left-0 bottom-0 w-full h-[0.6px] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+          </a>
+          <a href="#" className="relative group font-inter font-semibold p-2 right-8 text-gray-700 hover:text-pink-600 transition-colors duration-300">
+            About Us
+            <span className="absolute left-0 bottom-0 w-full h-[0.6px] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+          </a>
+          <a href="#" className="relative group font-inter font-semibold p-2 right-8 text-gray-700 hover:text-pink-600 transition-colors duration-300">
+            Contact Us
+            <span className="absolute left-0 bottom-0 w-full h-[0.6px] bg-customPink scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+          </a>
           </div>
 
           {/* Right side icons for desktop */}
