@@ -22,25 +22,4 @@
 body {
   font-family: 'Inter', sans-serif;
 }
-@layer components {
-  .navlink {
-    @apply font-inter font-semibold p-2 relative;
-  }
-
-  .navlink::after {
-    content: "";
-    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-width duration-300;
-  }
-
-  .navlink:hover::after {
-    @apply w-full;
-  }
-
-  .navlink-arrow {
-    @apply transition-transform duration-300;
-  }
-
-  .group:hover .navlink-arrow {
-    @apply rotate-180;
-  }
-}
+@
