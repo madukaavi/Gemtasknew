@@ -24,7 +24,7 @@ const CardSlider = () => {
       </div>
 
       {/* Tablet and Desktop view with grid layout */}
-      <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[10px]">
         {cards.map((card, index) => (
           <Card key={index} {...card} />
         ))}
