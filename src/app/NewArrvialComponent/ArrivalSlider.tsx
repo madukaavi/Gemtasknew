@@ -125,7 +125,7 @@ const ArrivalSlider: React.FC = () => {
       {/* Navigation buttons desktop view */}
       <div className="hidden md:flex items-center justify-between absolute inset-y-0 right-24 z-10">
         <button onClick={scrollRight} className="p-2 hidden lg:block text-pink-800">
-          <IoIosArrowForward  className='relative' width={30} />
+          <IoIosArrowForward  className='relative left-10' width={30}  />
         </button>
       </div>
       {/* Dots for mobile view */}
