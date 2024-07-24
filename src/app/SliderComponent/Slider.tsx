@@ -22,9 +22,9 @@ const Slider: React.FC = () => {
 
   const getImageClass = (index: number) => {
     if (index === currentIndex) {
-      return "blur-none opacity-100 transition-all duration-500"; // Middle image
+      return "blur-none opacity-100 transition-all duration-500 transform scale-110"; // Middle image
     } else {
-      return "blur-sm opacity-90 transition-all duration-500"; // Left and right images
+      return "blur-sm opacity-90 transition-all duration-500 transform scale-90"; // Left and right images
     }
   };
 
@@ -42,17 +42,20 @@ const Slider: React.FC = () => {
           className={getImageClass((currentIndex + 2) % images.length)}
         />
       </div>
-      <div className="relative w-[300px] lg:w-1/4 md:w-[250px] sm:w-[200px] h-full">
+      <div
+        className="relative w-[300px] lg:w-1/4 md:w-[250px] sm:w-[200px] h-full cursor-pointer"
+        onClick={scrollRight}
+      >
         <Image
           src={images[currentIndex].src}
           alt="Middle Image"
           layout="fill"
           objectFit="cover"
-          className="blur-none opacity-100 transition-all duration-500"
+          className="blur-none opacity-100 transition-all duration-500 transform scale-110"
         />
       </div>
       <div
-        className="relative w-[200px] h-[200px] cursor-pointer sm:block left-20 hidden top-8"
+        className="relative w-[200px] h-[200px] sm:block hidden top-8 left-20"
         onClick={scrollRight}
       >
         <Image
