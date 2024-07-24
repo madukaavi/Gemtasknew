@@ -24,14 +24,14 @@ function AllProduct() {
               <button
                 className={`px-4 font-semibold text-sm p-1 rounded-full ${
                   activeCategory === category
-                    ? 'bg-pink-800 text-white'
-                    : 'text-pink-800'
+                    ? 'bg-custompinkpr text-white'
+                    : 'text-custompinkpr'
                 }`}
                 onClick={() => setActiveCategory(category)}
               >
                 {category}
               </button>
-              {index < categories.length - 1 && <h1 className='h-5 border-[0.6px] border-black'></h1>}
+              {index < categories.length - 1 && <h1 className='h-5 border-[0.5px] border-text-custompinkpr'></h1>}
             </React.Fragment>
           ))}
         </div>
