@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
-const cards = [
+const cards: any[] = [
   // ... (your card data remains unchanged)
 ];
 
