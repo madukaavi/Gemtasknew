@@ -1,6 +1,7 @@
 "use client"; 
 import React, { useEffect, useRef, useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import Image from 'next/image';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const cards = [
@@ -39,101 +40,104 @@ const cards = [
     title: 'Item Name',
     description: 'Lorem ipsum dolor',
     price: 2600
-  }
+  },
+  
 ];
 
 const ArrivalSlider: React.FC = () => {
-  const sliderRef = useRef<HTMLDivElement>(null);
+  const scrollContainer = useRef<HTMLDivElement>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [showButtons, setShowButtons] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 768) {
-        setShowButtons(true);
-      } else {
-        setShowButtons(false);
+    const interval = setInterval(() => {
+      if (scrollContainer.current) {
+        const containerWidth = scrollContainer.current.clientWidth;
+        const cardWidth = containerWidth / (cards.length > 0 ? cards.length : 1);
+        const newIndex = (currentIndex + 1) % cards.length;
+        scrollContainer.current.scrollTo({ left: newIndex * cardWidth, behavior: 'smooth' });
+        setCurrentIndex(newIndex);
       }
-    };
+    }, 3000);
 
-    window.addEventListener('resize', handleResize);
-    handleResize();
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  const handleNext = () => {
-    if (sliderRef.current) {
-      const slider = sliderRef.current;
-      const newIndex = Math.min(currentIndex + 1, cards.length - 1);
+  const scrollLeft = () => {
+    if (scrollContainer.current) {
+      const containerWidth = scrollContainer.current.clientWidth;
+      const cardWidth = containerWidth / (cards.length > 0 ? cards.length : 1);
+      const newIndex = Math.max(currentIndex - 1, 0);
+      scrollContainer.current.scrollTo({ left: newIndex * cardWidth, behavior: 'smooth' });
       setCurrentIndex(newIndex);
-      slider.scrollTo({
-        left: newIndex * 320, // Adjust this value according to your card width
-        behavior: 'smooth',
-      });
     }
   };
 
-  const handlePrev = () => {
-    if (sliderRef.current) {
-      const slider = sliderRef.current;
-      const newIndex = Math.max(currentIndex - 1, 0);
+  const scrollRight = () => {
+    if (scrollContainer.current) {
+      const containerWidth = scrollContainer.current.clientWidth;
+      const cardWidth = containerWidth / (cards.length > 0 ? cards.length : 1);
+      const newIndex = Math.min(currentIndex + 1, cards.length - 1);
+      scrollContainer.current.scrollTo({ left: newIndex * cardWidth, behavior: 'smooth' });
       setCurrentIndex(newIndex);
-      slider.scrollTo({
-        left: newIndex * 320, // Adjust this value according to your card width
-        behavior: 'smooth',
-      });
+    }
+  };
+
+  const handleDotClick = (index: number) => {
+    if (scrollContainer.current) {
+      const containerWidth = scrollContainer.current.clientWidth;
+      const cardWidth = containerWidth / (cards.length > 0 ? cards.length : 1);
+      scrollContainer.current.scrollTo({ left: index * cardWidth, behavior: 'smooth' });
+      setCurrentIndex(index);
     }
   };
 
   return (
-    <div className="relative w-full">
-      <div className="overflow-x-scroll scrollbar-hide scroll-smooth" ref={sliderRef}>
-        <div className="flex space-x-4">
-          {cards.map((card, index) => (
-            <div
-              key={index}
-              className="flex-none w-[320px] h-[508px] rounded-md bg-white shadow-md relative group"
-            >
-              <img
-                src={card.imgSrc}
-                alt={card.title}
-                className="w-full h-full object-cover rounded-t-md"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black opacity-50 group-hover:opacity-70 transition-opacity"></div>
-              <div className="absolute bottom-0 left-0 p-4 text-white">
-                <h3 className="text-lg font-bold">{card.title}</h3>
-                <p className="text-sm">{card.description}</p>
-                <p className="text-lg font-bold">${card.price}</p>
-              </div>
-              {showButtons && (
-                <div className="absolute bottom-0 left-0 w-full p-4 flex justify-between opacity-0 group-hover:opacity-100 transition-opacity">
-                  <button className="px-4 py-2 bg-pink-500 text-white rounded-md">Add to Cart</button>
-                  <button className="px-4 py-2 bg-pink-500 text-white rounded-md">View Details</button>
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
+    <div className="relative">
+      {/* Navigation buttons desktop view */}
+      <div className="hidden md:flex items-center justify-between absolute inset-y-0 left-14 z-10">
+        <button onClick={scrollLeft} className="p-2 text-pink-800 hidden lg:block ">
+          <IoIosArrowBack size={30}/>
+        </button>
       </div>
-      {showButtons && (
-        <>
+      <div className="flex overflow-x-scroll lg:overflow-x-hidden md:items-center md:justify-center space-x-4 px-4 py-8 snap-x snap-mandatory scrollbar-hidden" ref={scrollContainer}>
+        {cards.map((card, index) => (
+          <div key={index} className="flex-shrink-0 w-full md:w-[200px] h-[380px] rounded-md overflow-hidden shadow-lg snap-center relative group">
+            <img className="w-full h-1/1 object-cover transition duration-500 group-hover:blur-sm" src={card.imgSrc} alt={card.title} />
+            <div className="p-4">
+              <div className="font-bold font-inter text-md mb-1 text-center">{card.title}</div>
+              <p className="text-gray-700 text-sm font-inter font-light text-center">{card.description}</p>
+              <div className="flex justify-center mt-2 space-x-2">
+                <div className="w-4 h-4 bg-red-600  cursor-pointer"></div>
+                <div className="w-4 h-4 bg-pink-800  cursor-pointer"></div>
+                <div className="w-4 h-4 bg-green-800  cursor-pointer"></div>
+              </div>
+              <p className="text-center mt-1 font-inter font-bold">Price: ${card.price}</p>
+            </div>
+            <div className="absolute inset-0 bg-gray-800 bg-opacity-50 flex flex-col items-center justify-center opacity-0 transition duration-500 group-hover:opacity-100">
+              <div className="flex flex-col space-y-2">
+                <button className="border-2 border-pink-600 text-pink-600 hover:bg-pink-800 hover:text-white py-2 px-4 rounded font-sans font-semibold transform translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300">BUY NOW</button>
+                <button className="bg-gradient-to-r hover:bg-pink-200 from-pink-500 to-pink-800 text-white py-2 px-4 rounded font-sans font-semibold transform translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* Navigation buttons desktop view */}
+      <div className="hidden md:flex items-center justify-between absolute inset-y-0 right-24 z-10">
+        <button onClick={scrollRight} className="p-2 hidden lg:block text-pink-800">
+          <IoIosArrowForward  className='relative left-10' width={30}  />
+        </button>
+      </div>
+      {/* Dots for mobile view */}
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2 mb-4 md:hidden">
+        {cards.map((_, index) => (
           <button
-            className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-pink-500 text-white p-2 rounded-full"
-            onClick={handlePrev}
-          >
-            <IoIosArrowBack size={24} />
-          </button>
-          <button
-            className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-pink-500 text-white p-2 rounded-full"
-            onClick={handleNext}
-          >
-            <IoIosArrowForward size={24} />
-          </button>
-        </>
-      )}
+            key={index}
+            onClick={() => handleDotClick(index)}
+            className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-pink-800' : 'bg-gray-300'}`}
+          />
+        ))}
+      </div>
     </div>
   );
 };
