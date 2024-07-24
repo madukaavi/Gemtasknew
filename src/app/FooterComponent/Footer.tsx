@@ -10,10 +10,10 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
             <h3 className="font-bold text-inter text-lg mb-2 md:text-xl">Contact</h3>
-            <p className="text-base text-inter md:text-lg"><strong className="font-medium text-inter">Address:</strong> 1234 Street Name, City, State, 12345</p>
-            <p className="text-base text-inter md:text-lg"><strong className="font-medium text-inter">Phone:</strong> (123) 456-7890</p>
-            <p className="text-base text-inter md:text-lg"><strong className="font-medium text-inter">Email:</strong> info@example.com</p>
-            <p className="text-base text-inter md:text-lg"><strong className="font-medium text-inter">Hours:</strong> Mon-Fri 9am - 6pm</p>
+            <p className="text-base text-inter md:text-lg"><strong className=" text-inter font-bold">Address:</strong> 502 New Design Str, Melbourne, San Francisco, CA 94110, United States</p>
+            <p className="text-base text-inter md:text-lg"><strong className="font-boldtext-inter">Phone:</strong>  (+01) 123-456-789</p>
+            <p className="text-base text-inter md:text-lg"><strong className="font-bold text-inter">Email:</strong> contact@ecom-market.com</p>
+            <p className="text-base text-inter md:text-lg"><strong className="font-bold text-inter">Hours:</strong> 8:00 - 17:00, Mon - Sat</p>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
             <h3 className="font-bold text-lg mb-2 md:text-xl text-inter">Make Money With Us</h3>
@@ -99,9 +99,9 @@ const Footer = () => {
           </div>
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
             <h3 className="font-bold text-lg mb-2 md:text-xl text-inter">App & Payment</h3>
-            <p className="text-base md:text-lg mb-4 text-inter font-semibold text-inter">Download our Apps and get extra 15% Discount on your first Order…!</p>
-            <div className="flex justify-center md:justify-start space-x-4 text-base md:text-lg">
+            <p className="text-base md:text-lg mb-4 text-inter font-semibold text-inter ">Download our Apps and get extra 15% Discount on your first Order…!</p>
             <p className="text-base md:text-lg mb-4 text-inter font-semibold text-inter">Secured Payment Gateways </p>
+            <div className="flex justify-center md:justify-start space-x-4 text-base md:text-lg">
               <a href="https://example.com/visa"><img src="https://firebasestorage.googleapis.com/v0/b/gemgem-b7c15.appspot.com/o/logos_visaelectron.png?alt=media&token=579734ef-89ab-4df4-92ce-d41b873023d7" alt="Visa" /></a>
               <a href="https://example.com/mastercard"><img src="https://firebasestorage.googleapis.com/v0/b/gemgem-b7c15.appspot.com/o/logos_mastercard.png?alt=media&token=ef95d40a-7e80-4367-8d56-91ff91f7bd1e" alt="Mastercard" /></a>
               <a href="https://example.com/paypal"><img src="https://firebasestorage.googleapis.com/v0/b/gemgem-b7c15.appspot.com/o/logos_amex.png?alt=media&token=248c7682-01bf-4179-b8ce-c80054823b44" alt="Paypal" /></a>
