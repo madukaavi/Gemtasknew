@@ -31,7 +31,7 @@ function AllProduct() {
               >
                 {category}
               </button>
-              {index < categories.length - 1 && <h1 className='h-5 border-[0.5px] border-text-custompinkpr'></h1>}
+              {index < categories.length - 1 && <h1 className='h-5 border-[0.5px] border-custompinkpr'></h1>}
             </React.Fragment>
           ))}
         </div>
