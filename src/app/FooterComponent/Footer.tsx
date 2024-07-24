@@ -20,27 +20,27 @@ const Footer = () => {
             <ul className="text-base md:text-lg">
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
-                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Mission & Vision</a>
+                <a href="#" className=" hover:translate-x-2 transition-transform hover:text-customPink duration-300 text-inter">Mission & Vision</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
-                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Our Team</a>
+                <a href="#" className=" hover:translate-x-2 transition-transform hover:text-customPink duration-300 text-inter">Our Team</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
-                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Careers</a>
+                <a href="#" className=" hover:translate-x-2 transition-transform hover:text-customPink duration-300 text-inter">Careers</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
-                <a href="#" className="hover:translate-x-2 transition-transform duration-300 text-inter">Press & Media</a>
+                <a href="#" className="hover:translate-x-2 transition-transform hover:text-customPink duration-300 text-inter">Press & Media</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
-                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Advertising</a>
+                <a href="#" className=" hover:translate-x-2 transition-transform hover:text-customPink  duration-300 text-inter">Advertising</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
-                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Testimonials</a>
+                <a href="#" className=" hover:translate-x-2 transition-transform hover:text-customPink duration-300 text-inter">Testimonials</a>
               </li>
             </ul>
           </div>
@@ -49,27 +49,27 @@ const Footer = () => {
             <ul className="text-base md:text-lg relative top-5">
               <li className="flex items-center justify-center md:justify-start mb-1 ">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
-                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Our Blog</a>
+                <a href="#" className=" hover:translate-x-2 transition-transform hover:text-customPink duration-300 text-inter">Our Blog</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
-                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Plan & Pricing</a>
+                <a href="#" className=" hover:translate-x-2 transition-transform hover:text-customPink duration-300 text-inter">Plan & Pricing</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
-                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Knowledge Base</a>
+                <a href="#" className=" hover:translate-x-2 transition-transform hover:text-customPink duration-300 text-inter">Knowledge Base</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
-                <a href="#" className="hover:translate-x-2 transition-transform duration-300 text-inter">Cookie Policy</a>
+                <a href="#" className="hover:translate-x-2 transition-transform hover:text-customPink duration-300 text-inter">Cookie Policy</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
-                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Office Center</a>
+                <a href="#" className=" hover:translate-x-2 transition-transform hover:text-customPink duration-300 text-inter">Office Center</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
-                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">News & Events</a>
+                <a href="#" className=" hover:translate-x-2 transition-transform hover:text-customPink duration-300 text-inter">News & Events</a>
               </li>
             </ul>
           </div>
@@ -78,23 +78,23 @@ const Footer = () => {
             <ul className="text-base md:text-lg relative top-5">
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
-                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">FAQs</a>
+                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 hover:text-customPink text-inter">FAQs</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
-                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Editor Help</a></li>
+                <a href="#" className=" hover:translate-x-2 hover:text-customPink transition-transform duration-300 text-inter">Editor Help</a></li>
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
-                <a href="#" className="e hover:translate-x-2 transition-transform duration-300 text-inter">Community</a></li>
+                <a href="#" className="e hover:translate-x-2 transition-transform duration-300 hover:text-customPink text-inter">Community</a></li>
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
-                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Live Chatting</a></li>
+                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 hover:text-customPink text-inter">Live Chatting</a></li>
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
-                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Contact Us</a></li>
+                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 hover:text-customPink text-inter">Contact Us</a></li>
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
-                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Support Center</a></li>
+                <a href="#" className=" hover:translate-x-2 transition-transform duration-300 hover:text-customPink text-inter">Support Center</a></li>
             </ul>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
