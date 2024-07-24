@@ -76,7 +76,7 @@ const ArrivalSlider = () => {
           className="absolute left-0 z-10 p-2  text-black rounded-full focus:outline-none"
           onClick={scrollLeft}
         >
-          <IoIosArrowBack size={30} className='relative left-10 bg-customPink' />
+          <IoIosArrowBack size={30} className='relative left-10 text-customPink' />
         </button>
         <div
           ref={scrollContainerRef}
@@ -87,7 +87,8 @@ const ArrivalSlider = () => {
               <div className="w-[230px] h-80 rounded-md shadow-md bg-bgcolorcard overflow-hidden">
                 <img src={card.imageUrl} alt={card.title} className="w-[200px] h-[200px] relative bottom-4" />
                 <div className="p-4">
-                  <h2 className="text-lg font-bold">{card.title}</h2>
+                <h2 className="text-md font-semibold text-center">{card.title}</h2>
+                <h2 className="text-md font-semibold text-center">{card.title2}</h2>
                 </div>
               </div>
             </div>
