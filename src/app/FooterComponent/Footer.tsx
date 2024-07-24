@@ -46,7 +46,7 @@ const Footer = () => {
           </div>
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
             <h3 className="font-bold text-lg mb-5 md:text-xl text-inter">Company</h3>
-            <ul className="text-base md:text-lg relative top-4">
+            <ul className="text-base md:text-lg relative top-5">
               <li className="flex items-center justify-center md:justify-start mb-1 ">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Our Blog</a>
@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
             <h3 className="font-bold text-lg mb-5 md:text-xl text-inter">My Account</h3>
-            <ul className="text-base md:text-lg">
+            <ul className="text-base md:text-lg relative top-5">
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">FAQs</a>
