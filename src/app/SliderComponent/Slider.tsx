@@ -33,7 +33,7 @@ const Slider: React.FC = () => {
   return (
     <div className="w-full h-[300px] flex cursor-pointer items-center justify-center mt-4 space-x-4">
       <div
-        className="relative w-[200px] h-[200px] sm:block hidden top-8 right-10"
+        className="relative w-[200px] h-[200px] sm:block hidden top-8 right-20"
         onMouseEnter={() => handleMouseEnter(images[0].src)}
         onMouseLeave={handleMouseLeave}
       >
@@ -55,7 +55,7 @@ const Slider: React.FC = () => {
         />
       </div>
       <div
-        className="relative w-[200px] h-[200px] cursor-pointer sm:block left-10 hidden top-8"
+        className="relative w-[200px] h-[200px] cursor-pointer sm:block left-20 hidden top-8"
         onMouseEnter={() => handleMouseEnter(images[2].src)}
         onMouseLeave={handleMouseLeave}
       >
