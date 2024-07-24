@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import { FaCcVisa, FaCcMastercard, FaCcPaypal, FaChevronRight } from 'react-icons/fa';
+import { IoMdArrowDropright } from 'react-icons/io';
 
 const Footer = () => {
   return (
@@ -18,27 +19,27 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-2 md:text-xl text-inter">Make Money With Us</h3>
             <ul className="text-base md:text-lg">
               <li className="flex items-center justify-center md:justify-start mb-1">
-                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Mission & Vision</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
-                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Our Team</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
-                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Careers</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
-                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className="hover:translate-x-2 transition-transform duration-300 text-inter">Press & Media</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
-                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Advertising</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
-                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Testimonials</a>
               </li>
             </ul>
@@ -47,27 +48,27 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-2 md:text-xl text-inter">Company</h3>
             <ul className="text-base md:text-lg">
               <li className="flex items-center justify-center md:justify-start mb-1">
-                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Our Blog</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
-                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Plan & Pricing</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
-                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Knowledge Base</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
-                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className="hover:translate-x-2 transition-transform duration-300 text-inter">Cookie Policy</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
-                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Office Center</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
-                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">News & Events</a>
               </li>
             </ul>
@@ -76,23 +77,23 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-2 md:text-xl text-inter">My Account</h3>
             <ul className="text-base md:text-lg">
               <li className="flex items-center justify-center md:justify-start mb-1">
-                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">FAQs</a>
               </li>
               <li className="flex items-center justify-center md:justify-start mb-1">
-                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Editor Help</a></li>
               <li className="flex items-center justify-center md:justify-start mb-1">
-                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className="e hover:translate-x-2 transition-transform duration-300 text-inter">Community</a></li>
               <li className="flex items-center justify-center md:justify-start mb-1">
-                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Live Chatting</a></li>
               <li className="flex items-center justify-center md:justify-start mb-1">
-                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Contact Us</a></li>
               <li className="flex items-center justify-center md:justify-start mb-1">
-                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Support Center</a></li>
             </ul>
           </div>
