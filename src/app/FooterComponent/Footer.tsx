@@ -99,9 +99,9 @@ const Footer = () => {
           </div>
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
             <h3 className="font-bold text-lg mb-5 md:text-xl text-inter">App & Payment</h3>
-            <p className="text-base md:text-md mb-4 text-inter font-semibold text-inter relative top-5 ">Download our Apps and get extra 15% Discount on your first Order…!</p>
-            <p className="text-base md:text-md mb-4 text-inter font-semibold text-inter relative top-5">Secured Payment Gateways </p>
-            <div className="flex justify-center md:justify-start space-x-4 text-base md:text-lg">
+            <p className="text-base sm:text-md mb-4 text-inter font-semibold text-inter relative top-5 ">Download our Apps and get extra 15% Discount on your first Order…!</p>
+            <p className="text-base sm:text-md mb-4 text-inter font-semibold text-inter relative top-5">Secured Payment Gateways </p>
+            <div className="flex justify-center md:justify-start space-x-4 text-base md:text-lg relative top-5">
               <a href="https://example.com/visa"><img src="https://firebasestorage.googleapis.com/v0/b/gemgem-b7c15.appspot.com/o/logos_visaelectron.png?alt=media&token=579734ef-89ab-4df4-92ce-d41b873023d7" alt="Visa" /></a>
               <a href="https://example.com/mastercard"><img src="https://firebasestorage.googleapis.com/v0/b/gemgem-b7c15.appspot.com/o/logos_mastercard.png?alt=media&token=ef95d40a-7e80-4367-8d56-91ff91f7bd1e" alt="Mastercard" /></a>
               <a href="https://example.com/paypal"><img src="https://firebasestorage.googleapis.com/v0/b/gemgem-b7c15.appspot.com/o/logos_amex.png?alt=media&token=248c7682-01bf-4179-b8ce-c80054823b44" alt="Paypal" /></a>
