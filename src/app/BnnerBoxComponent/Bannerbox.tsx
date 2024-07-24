@@ -9,7 +9,7 @@ const BannerBox = () => {
         alt="Banner"
         className="w-full h-full object-cover"
       />
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 bg-black bg-opacity-50">
         <h2 className="text-3xl font-bold mb-4">Subscribe & Get 10% Discount</h2>
         <p className="text-lg mb-6">Get Email Update out latest Shop News</p>
         <div className="flex flex-col items-center w-full max-w-md">
