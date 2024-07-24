@@ -10,10 +10,10 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
             <h3 className="font-bold text-inter text-lg mb-2 md:text-xl">Contact</h3>
-            <p className="text-base text-inter md:text-md"><strong className=" text-inter font-bold">Address:</strong> 502 New Design Str, Melbourne, San Francisco, CA 94110, United States</p>
-            <p className="text-base text-inter md:text-md"><strong className="font-bold text-inter">Phone:</strong>  (+01) 123-456-789</p>
-            <p className="text-base text-inter md:text-md"><strong className="font-bold text-inter">Email:</strong> contact@ecom-market.com</p>
-            <p className="text-base text-inter md:text-md"><strong className="font-bold text-inter">Hours:</strong> 8:00 - 17:00, Mon - Sat</p>
+            <p className="text-base text-inter md:text-lg"><strong className=" text-inter font-bold">Address:</strong><span className="text-sm font-semibold"> 502 New Design Str, Melbourne, San Francisco, CA 94110, United States</span></p>
+            <p className="text-base text-inter md:text-lg"><strong className="font-bold text-inter">Phone:</strong><span className="text-sm font-semibold"> (+01) 123-456-789</span></p>
+            <p className="text-base text-inter md:text-lg"><strong className="font-bold text-inter">Email:</strong><span className="text-sm font-semibold"> contact@ecom-market.com</span></p>
+            <p className="text-base text-inter md:text-lg"><strong className="font-bold text-inter">Hours:</strong>  <span className="text-sm font-semibold"> 8:00 - 17:00, Mon - Sat</span></p>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
             <h3 className="font-bold text-lg mb-4 md:text-xl text-inter">Make Money With <br></br>Us</h3>
