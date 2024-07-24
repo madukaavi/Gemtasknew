@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 
 const Slider: React.FC = () => {
@@ -11,7 +11,7 @@ const Slider: React.FC = () => {
   ];
 
   const [hoveredImage, setHoveredImage] = useState<string | null>(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(1); // Start with the middle image
 
   const handleMouseEnter = (imageSrc: string) => {
     setHoveredImage(imageSrc);
@@ -21,33 +21,41 @@ const Slider: React.FC = () => {
     setHoveredImage(null);
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      setHoveredImage(images[(currentIndex + 1) % images.length].src);
-    }, 3000); // Change image every 3 seconds
+  const scrollLeft = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+  };
 
-    return () => clearInterval(interval);
-  }, [currentIndex, images]);
+  const scrollRight = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+  };
+
+  const getImageClass = (index: number) => {
+    if (index === currentIndex) {
+      return "blur-none opacity-100"; // Middle image
+    } else {
+      return "blur-sm opacity-90"; // Left and right images
+    }
+  };
 
   return (
     <div className="w-full h-[300px] flex cursor-pointer items-center justify-center mt-4 space-x-4">
       <div
         className="relative w-[200px] h-[200px] sm:block hidden top-8 right-20"
-        onMouseEnter={() => handleMouseEnter(images[0].src)}
+        onMouseEnter={() => handleMouseEnter(images[(currentIndex + 2) % images.length].src)}
         onMouseLeave={handleMouseLeave}
+        onClick={scrollLeft}
       >
         <Image
-          src={images[0].src}
-          alt={images[0].alt}
+          src={images[(currentIndex + 2) % images.length].src}
+          alt={images[(currentIndex + 2) % images.length].alt}
           layout="fill"
           objectFit="cover"
-          className="blur-sm opacity-90"
+          className={getImageClass((currentIndex + 2) % images.length)}
         />
       </div>
       <div className="relative w-[300px] lg:w-1/4 md:w-[250px] sm:w-[200px] h-full">
         <Image
-          src={hoveredImage || images[1].src}
+          src={hoveredImage || images[currentIndex].src}
           alt="Middle Image"
           layout="fill"
           objectFit="cover"
@@ -56,15 +64,16 @@ const Slider: React.FC = () => {
       </div>
       <div
         className="relative w-[200px] h-[200px] cursor-pointer sm:block left-20 hidden top-8"
-        onMouseEnter={() => handleMouseEnter(images[2].src)}
+        onMouseEnter={() => handleMouseEnter(images[(currentIndex + 1) % images.length].src)}
         onMouseLeave={handleMouseLeave}
+        onClick={scrollRight}
       >
         <Image
-          src={images[2].src}
-          alt={images[2].alt}
+          src={images[(currentIndex + 1) % images.length].src}
+          alt={images[(currentIndex + 1) % images.length].alt}
           layout="fill"
           objectFit="cover"
-          className="blur-sm opacity-90"
+          className={getImageClass((currentIndex + 1) % images.length)}
         />
       </div>
     </div>
