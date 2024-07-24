@@ -18,7 +18,8 @@ const config: Config = {
           'customPink': 'rgba(241, 39, 97, 1)',
           'custompinknew':'rgba(116, 14, 76, 1)',
           'custompinkpr':'rgba(181, 2, 111, 1)',
-          'cardoverlay':'rgba(255, 255, 255, 0.1)'
+          'cardoverlay':'rgba(255, 255, 255, 0.1)',
+          'bgcolorcard':'rgba(250, 250, 250, 1)',
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],

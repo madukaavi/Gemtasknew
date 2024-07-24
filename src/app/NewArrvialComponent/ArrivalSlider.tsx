@@ -37,7 +37,7 @@ const ArrivalSlider = () => {
   };
 
   return (
-    <div className="bg-white flex justify-center items-center p-4 relative">
+    <div className="bg-bgcolorcard flex justify-center items-center p-4 relative">
       {/* Mobile view with dots */}
       <div className="sm:hidden w-full flex flex-col items-center">
         <div className="w-full overflow-hidden">
@@ -75,7 +75,7 @@ const ArrivalSlider = () => {
           className="absolute left-0 z-10 p-2  text-black rounded-full focus:outline-none"
           onClick={scrollLeft}
         >
-          <IoIosArrowBack size={30} className='relative right-8' />
+          <IoIosArrowBack size={30} className='relative left-8' />
         </button>
         <div
           ref={scrollContainerRef}
