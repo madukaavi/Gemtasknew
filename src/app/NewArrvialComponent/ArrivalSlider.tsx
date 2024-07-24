@@ -71,7 +71,7 @@ const ArrivalSlider = () => {
       {/* Tablet and Desktop view with horizontal scroll and arrows */}
       <div className="hidden sm:flex items-center relative w-full px-28">
         <button
-          className="absolute left-0 z-10 p-2 bg-gray-800 text-white rounded-full focus:outline-none"
+          className="absolute left-0 z-10 p-2  text-white rounded-full focus:outline-none"
           onClick={scrollLeft}
         >
           <FaChevronLeft size={30} />
@@ -83,7 +83,7 @@ const ArrivalSlider = () => {
           {cards.map((card, index) => (
             <div key={index} className="flex-shrink-0 w-auto">
               <div className="w-[250px] h-96 rounded-md shadow-md overflow-hidden">
-                <img src={card.imageUrl} alt={card.title} className="w-full h-auto" />
+                <img src={card.imageUrl} alt={card.title} className="w-full h-20" />
                 <div className="p-4">
                   <h2 className="text-lg font-bold">{card.title}</h2>
                 </div>
@@ -92,7 +92,7 @@ const ArrivalSlider = () => {
           ))}
         </div>
         <button
-          className="absolute right-0 z-10 p-2 bg-gray-800 text-white rounded-full focus:outline-none"
+          className="absolute right-0 z-10 p-2  text-white rounded-full focus:outline-none"
           onClick={scrollRight}
         >
           <FaChevronRight size={30} />
