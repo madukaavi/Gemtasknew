@@ -70,7 +70,7 @@ const ArrivalSlider = () => {
       </div>
 
       {/* Tablet and Desktop view with horizontal scroll and arrows */}
-      <div className="hidden sm:flex items-center relative w-full px-28">
+      <div className="hidden sm:flex items-center relative w-full px-40">
         <button
           className="absolute left-0 z-10 p-2  text-black rounded-full focus:outline-none"
           onClick={scrollLeft}
