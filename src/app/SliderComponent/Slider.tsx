@@ -42,7 +42,7 @@ const Slider: React.FC = () => {
           alt={images[0].alt}
           layout="fill"
           objectFit="cover"
-          className="blur-sm opacity-30"
+          className="blur-sm opacity-90"
         />
       </div>
       <div className="relative w-[300px] lg:w-1/4 md:w-[250px] sm:w-[200px] h-full">
@@ -55,7 +55,7 @@ const Slider: React.FC = () => {
         />
       </div>
       <div
-        className="relative w-[100px] h-[100px] cursor-pointer sm:block hidden top-8"
+        className="relative w-[200px] h-[200px] cursor-pointer sm:block hidden top-8"
         onMouseEnter={() => handleMouseEnter(images[2].src)}
         onMouseLeave={handleMouseLeave}
       >
@@ -64,7 +64,7 @@ const Slider: React.FC = () => {
           alt={images[2].alt}
           layout="fill"
           objectFit="cover"
-          className="blur-sm opacity-30"
+          className="blur-sm opacity-90"
         />
       </div>
     </div>
