@@ -28,7 +28,7 @@ const ArrivalSlider = () => {
   ];
 
   return (
-    <div className="relative flex items-center">
+    <div className="relative flex items-center px-12">
       <button 
         onClick={scrollLeft} 
         className="absolute left-0 p-2 bg-gray-800 text-white rounded-full focus:outline-none z-10"
@@ -38,10 +38,10 @@ const ArrivalSlider = () => {
       
       <div 
         ref={scrollRef}
-        className="flex gap-4 overflow-x-auto scroll-smooth px-12 pb-4"
+        className="flex gap-4 overflow-x-auto scroll-smooth  pb-4"
       >
         {cards.map(card => (
-          <div key={card.id} className="w-[250px] h-96 rounded-md shadow-md overflow-hidden flex-shrink-0 px-12">
+          <div key={card.id} className="w-[250px] h-96 rounded-md shadow-md overflow-hidden flex-shrink-0 ">
             <img src={card.imageUrl} alt={card.title} className="w-full h-full object-cover" />
             <div className="p-4">
               <h2 className="text-lg font-bold">{card.title}</h2>
