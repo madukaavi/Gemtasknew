@@ -37,7 +37,7 @@ const ArrivalSlider = () => {
   };
 
   return (
-    <div className="bg-bgcolorcard flex justify-center items-center p-4 relative">
+    <div className="bg-white flex justify-center items-center p-4 relative">
       {/* Mobile view with dots */}
       <div className="sm:hidden w-full flex flex-col items-center">
         <div className="w-full overflow-hidden">
@@ -48,7 +48,7 @@ const ArrivalSlider = () => {
           >
             {cards.map((card, index) => (
               <div key={index} className="flex-shrink-0 w-full">
-                <div className="w-[250px] h-80 rounded-md shadow-md overflow-hidden">
+                <div className="w-[250px] h-80 rounded-md shadow-md bg-bgcolorcard overflow-hidden">
                   <img src={card.imageUrl} alt={card.title} className="w-full h-auto" />
                   <div className="p-4">
                     <h2 className="text-lg font-bold">{card.title}</h2>
@@ -75,7 +75,7 @@ const ArrivalSlider = () => {
           className="absolute left-0 z-10 p-2  text-black rounded-full focus:outline-none"
           onClick={scrollLeft}
         >
-          <IoIosArrowBack size={30} className='relative left-8' />
+          <IoIosArrowBack size={30} className='relative left-9' />
         </button>
         <div
           ref={scrollContainerRef}
@@ -84,7 +84,7 @@ const ArrivalSlider = () => {
           {cards.map((card, index) => (
             <div key={index} className="flex-shrink-0 w-auto">
               <div className="w-[250px] h-80 rounded-md shadow-md overflow-hidden">
-                <img src={card.imageUrl} alt={card.title} className="w-full h-40" />
+                <img src={card.imageUrl} alt={card.title} className="w-full h-60" />
                 <div className="p-4">
                   <h2 className="text-lg font-bold">{card.title}</h2>
                 </div>
@@ -96,7 +96,7 @@ const ArrivalSlider = () => {
           className="absolute right-0 z-10 p-2  text-black rounded-full focus:outline-none"
           onClick={scrollRight}
         >
-          <IoIosArrowForward size={30} className='relative right-8' />
+          <IoIosArrowForward size={30} className='relative right-9' />
         </button>
       </div>
     </div>
