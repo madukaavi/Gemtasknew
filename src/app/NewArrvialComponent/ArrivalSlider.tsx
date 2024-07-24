@@ -70,7 +70,7 @@ const ArrivalSlider: React.FC = () => {
       const newIndex = Math.min(currentIndex + 1, cards.length - 1);
       setCurrentIndex(newIndex);
       slider.scrollTo({
-        left: newIndex * 300, // Adjust this value according to your card width
+        left: newIndex * 320, // Adjust this value according to your card width
         behavior: 'smooth',
       });
     }
@@ -82,7 +82,7 @@ const ArrivalSlider: React.FC = () => {
       const newIndex = Math.max(currentIndex - 1, 0);
       setCurrentIndex(newIndex);
       slider.scrollTo({
-        left: newIndex * 300, // Adjust this value according to your card width
+        left: newIndex * 320, // Adjust this value according to your card width
         behavior: 'smooth',
       });
     }
@@ -95,7 +95,7 @@ const ArrivalSlider: React.FC = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="flex-none w-[300px] h-[200px] rounded-md bg-white shadow-md relative group"
+              className="flex-none w-[320px] h-[508px] rounded-md bg-white shadow-md relative group"
             >
               <img
                 src={card.imgSrc}
