@@ -33,7 +33,7 @@ const Slider: React.FC = () => {
   return (
     <div className="w-full h-[300px] flex cursor-pointer items-center justify-center mt-4 space-x-4">
       <div
-        className="relative w-1/4 h-full sm:block hidden"
+        className="relative w-1/4 h-full sm:block hidden  top-3"
         onMouseEnter={() => handleMouseEnter(images[0].src)}
         onMouseLeave={handleMouseLeave}
       >
