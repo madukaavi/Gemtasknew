@@ -8,10 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      lineHeight: {
-        'extra-loose': '2.5',
-        'super-tight': '1.1',
-      },
+      
       screens: {
         'mobile-320': {'max': '320px'},
       },
