@@ -17,92 +17,92 @@ const Footer = () => {
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
             <h3 className="font-bold text-lg mb-2 md:text-xl text-inter">Make Money With Us</h3>
             <ul className="text-base md:text-lg">
-              <li className="flex items-center justify-center md:justify-start mb-1 group">
-                <FaChevronRight className="mr-2 text-lg md:text-xl transition-transform duration-300 group-hover:translate-x-2" />
-                <a href="#" className="hover:underline text-inter">Mission & Vision</a>
+              <li className="flex items-center justify-center md:justify-start mb-1">
+                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <a href="#" className="hover:underline hover:translate-x-2 transition-transform duration-300 text-inter">Mission & Vision</a>
               </li>
-              <li className="flex items-center justify-center md:justify-start mb-1 group">
-                <FaChevronRight className="mr-2 text-lg md:text-xl transition-transform duration-300 group-hover:translate-x-2" />
-                <a href="#" className="hover:underline text-inter">Our Team</a>
+              <li className="flex items-center justify-center md:justify-start mb-1">
+                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <a href="#" className="hover:underline hover:translate-x-2 transition-transform duration-300 text-inter">Our Team</a>
               </li>
-              <li className="flex items-center justify-center md:justify-start mb-1 group">
-                <FaChevronRight className="mr-2 text-lg md:text-xl transition-transform duration-300 group-hover:translate-x-2" />
-                <a href="#" className="hover:underline text-inter">Careers</a>
+              <li className="flex items-center justify-center md:justify-start mb-1">
+                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <a href="#" className="hover:underline hover:translate-x-2 transition-transform duration-300 text-inter">Careers</a>
               </li>
-              <li className="flex items-center justify-center md:justify-start mb-1 group">
-                <FaChevronRight className="mr-2 text-lg md:text-xl transition-transform duration-300 group-hover:translate-x-2" />
-                <a href="#" className="hover:underline text-inter">Press & Media</a>
+              <li className="flex items-center justify-center md:justify-start mb-1">
+                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <a href="#" className="hover:underline hover:translate-x-2 transition-transform duration-300 text-inter">Press & Media</a>
               </li>
-              <li className="flex items-center justify-center md:justify-start mb-1 group">
-                <FaChevronRight className="mr-2 text-lg md:text-xl transition-transform duration-300 group-hover:translate-x-2" />
-                <a href="#" className="hover:underline text-inter">Advertising</a>
+              <li className="flex items-center justify-center md:justify-start mb-1">
+                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <a href="#" className="hover:underline hover:translate-x-2 transition-transform duration-300 text-inter">Advertising</a>
               </li>
-              <li className="flex items-center justify-center md:justify-start mb-1 group">
-                <FaChevronRight className="mr-2 text-lg md:text-xl transition-transform duration-300 group-hover:translate-x-2" />
-                <a href="#" className="hover:underline text-inter">Testimonials</a>
+              <li className="flex items-center justify-center md:justify-start mb-1">
+                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <a href="#" className="hover:underline hover:translate-x-2 transition-transform duration-300 text-inter">Testimonials</a>
               </li>
             </ul>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
             <h3 className="font-bold text-lg mb-2 md:text-xl text-inter">Company</h3>
             <ul className="text-base md:text-lg">
-              <li className="flex items-center justify-center md:justify-start mb-1 group">
-                <FaChevronRight className="mr-2 text-lg md:text-xl transition-transform duration-300 group-hover:translate-x-2" />
-                <a href="#" className="hover:underline text-inter">Our Blog</a>
+              <li className="flex items-center justify-center md:justify-start mb-1">
+                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <a href="#" className="hover:underline hover:translate-x-2 transition-transform duration-300 text-inter">Our Blog</a>
               </li>
-              <li className="flex items-center justify-center md:justify-start mb-1 group">
-                <FaChevronRight className="mr-2 text-lg md:text-xl transition-transform duration-300 group-hover:translate-x-2" />
-                <a href="#" className="hover:underline text-inter">Plan & Pricing</a>
+              <li className="flex items-center justify-center md:justify-start mb-1">
+                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <a href="#" className="hover:underline hover:translate-x-2 transition-transform duration-300 text-inter">Plan & Pricing</a>
               </li>
-              <li className="flex items-center justify-center md:justify-start mb-1 group">
-                <FaChevronRight className="mr-2 text-lg md:text-xl transition-transform duration-300 group-hover:translate-x-2" />
-                <a href="#" className="hover:underline text-inter">Knowledge Base</a>
+              <li className="flex items-center justify-center md:justify-start mb-1">
+                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <a href="#" className="hover:underline hover:translate-x-2 transition-transform duration-300 text-inter">Knowledge Base</a>
               </li>
-              <li className="flex items-center justify-center md:justify-start mb-1 group">
-                <FaChevronRight className="mr-2 text-lg md:text-xl transition-transform duration-300 group-hover:translate-x-2" />
-                <a href="#" className="hover:underline text-inter">Cookie Policy</a>
+              <li className="flex items-center justify-center md:justify-start mb-1">
+                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <a href="#" className="hover:underline hover:translate-x-2 transition-transform duration-300 text-inter">Cookie Policy</a>
               </li>
-              <li className="flex items-center justify-center md:justify-start mb-1 group">
-                <FaChevronRight className="mr-2 text-lg md:text-xl transition-transform duration-300 group-hover:translate-x-2" />
-                <a href="#" className="hover:underline text-inter">Office Center</a>
+              <li className="flex items-center justify-center md:justify-start mb-1">
+                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <a href="#" className="hover:underline hover:translate-x-2 transition-transform duration-300 text-inter">Office Center</a>
               </li>
-              <li className="flex items-center justify-center md:justify-start mb-1 group">
-                <FaChevronRight className="mr-2 text-lg md:text-xl transition-transform duration-300 group-hover:translate-x-2" />
-                <a href="#" className="hover:underline text-inter">News & Events</a>
+              <li className="flex items-center justify-center md:justify-start mb-1">
+                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <a href="#" className="hover:underline hover:translate-x-2 transition-transform duration-300 text-inter">News & Events</a>
               </li>
             </ul>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
             <h3 className="font-bold text-lg mb-2 md:text-xl text-inter">My Account</h3>
             <ul className="text-base md:text-lg">
-              <li className="flex items-center justify-center md:justify-start mb-1 group">
-                <FaChevronRight className="mr-2 text-lg md:text-xl transition-transform duration-300 group-hover:translate-x-2" />
-                <a href="#" className="hover:underline text-inter">FAQs</a>
+              <li className="flex items-center justify-center md:justify-start mb-1">
+                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <a href="#" className="hover:underline hover:translate-x-2 transition-transform duration-300 text-inter">FAQs</a>
               </li>
-              <li className="flex items-center justify-center md:justify-start mb-1 group">
-                <FaChevronRight className="mr-2 text-lg md:text-xl transition-transform duration-300 group-hover:translate-x-2" />
-                <a href="#" className="hover:underline text-inter">Editor Help</a></li>
-              <li className="flex items-center justify-center md:justify-start mb-1 group">
-                <FaChevronRight className="mr-2 text-lg md:text-xl transition-transform duration-300 group-hover:translate-x-2" />
-                <a href="#" className="hover:underline text-inter">Community</a></li>
-              <li className="flex items-center justify-center md:justify-start mb-1 group">
-                <FaChevronRight className="mr-2 text-lg md:text-xl transition-transform duration-300 group-hover:translate-x-2" />
-                <a href="#" className="hover:underline text-inter">Live Chatting</a></li>
-              <li className="flex items-center justify-center md:justify-start mb-1 group">
-                <FaChevronRight className="mr-2 text-lg md:text-xl transition-transform duration-300 group-hover:translate-x-2" />
-                <a href="#" className="hover:underline text-inter">Contact Us</a></li>
-              <li className="flex items-center justify-center md:justify-start mb-1 group">
-                <FaChevronRight className="mr-2 text-lg md:text-xl transition-transform duration-300 group-hover:translate-x-2" />
-                <a href="#" className="hover:underline text-inter">Support Center</a></li>
+              <li className="flex items-center justify-center md:justify-start mb-1">
+                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <a href="#" className="hover:underline hover:translate-x-2 transition-transform duration-300 text-inter">Editor Help</a></li>
+              <li className="flex items-center justify-center md:justify-start mb-1">
+                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <a href="#" className="hover:underline hover:translate-x-2 transition-transform duration-300 text-inter">Community</a></li>
+              <li className="flex items-center justify-center md:justify-start mb-1">
+                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <a href="#" className="hover:underline hover:translate-x-2 transition-transform duration-300 text-inter">Live Chatting</a></li>
+              <li className="flex items-center justify-center md:justify-start mb-1">
+                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <a href="#" className="hover:underline hover:translate-x-2 transition-transform duration-300 text-inter">Contact Us</a></li>
+              <li className="flex items-center justify-center md:justify-start mb-1">
+                <FaChevronRight className="mr-2 text-lg md:text-xl" />
+                <a href="#" className="hover:underline hover:translate-x-2 transition-transform duration-300 text-inter">Support Center</a></li>
             </ul>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
             <h3 className="font-bold text-lg mb-2 md:text-xl text-inter">App & Payment</h3>
             <p className="text-base md:text-lg mb-4 text-inter">Download our app and pay with your favorite payment method. We support various payment gateways to ensure a smooth transaction.</p>
             <div className="flex justify-center md:justify-start space-x-4 text-base md:text-lg">
-              <a href="https://example.com/visa"><FaCcVisa size={24} /></a>
-              <a href="https://example.com/mastercard"><FaCcMastercard size={24} /></a>
-              <a href="https://example.com/paypal"><FaCcPaypal size={24} /></a>
+              <a href="https://example.com/visa"><img src="https://via.placeholder.com/24" alt="Visa" /></a>
+              <a href="https://example.com/mastercard"><img src="https://via.placeholder.com/24" alt="Mastercard" /></a>
+              <a href="https://example.com/paypal"><img src="https://via.placeholder.com/24" alt="Paypal" /></a>
             </div>
           </div>
         </div>
