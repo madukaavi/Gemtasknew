@@ -5,7 +5,7 @@ import { FaChevronDown } from 'react-icons/fa';
 
 function AllProduct() {
   const [activeCategory, setActiveCategory] = useState('All');
-  const categories = ['All', 'Category name', 'Category name', 'Category name', 'Category name', 'Category name'];
+  const categories = ['All', 'Category name1', 'Category name2', 'Category name3', 'Category name4', 'Category name5'];
 
   return (
     <>
