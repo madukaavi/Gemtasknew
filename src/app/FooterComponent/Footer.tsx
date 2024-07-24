@@ -10,10 +10,10 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
             <h3 className="font-bold text-inter text-lg mb-2 md:text-xl">Contact</h3>
-            <p className="text-base text-inter md:text-lg"><strong className=" text-inter font-bold">Address:</strong> 502 New Design Str, Melbourne, San Francisco, CA 94110, United States</p>
-            <p className="text-base text-inter md:text-lg"><strong className="font-bold text-inter">Phone:</strong>  (+01) 123-456-789</p>
-            <p className="text-base text-inter md:text-lg"><strong className="font-bold text-inter">Email:</strong> contact@ecom-market.com</p>
-            <p className="text-base text-inter md:text-lg"><strong className="font-bold text-inter">Hours:</strong> 8:00 - 17:00, Mon - Sat</p>
+            <p className="text-base text-inter md:text-md"><strong className=" text-inter font-bold">Address:</strong> 502 New Design Str, Melbourne, San Francisco, CA 94110, United States</p>
+            <p className="text-base text-inter md:text-md"><strong className="font-bold text-inter">Phone:</strong>  (+01) 123-456-789</p>
+            <p className="text-base text-inter md:text-md"><strong className="font-bold text-inter">Email:</strong> contact@ecom-market.com</p>
+            <p className="text-base text-inter md:text-md"><strong className="font-bold text-inter">Hours:</strong> 8:00 - 17:00, Mon - Sat</p>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
             <h3 className="font-bold text-lg mb-4 md:text-xl text-inter">Make Money With <br></br>Us</h3>
@@ -46,7 +46,7 @@ const Footer = () => {
           </div>
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
             <h3 className="font-bold text-lg mb-5 md:text-xl text-inter">Company</h3>
-            <ul className="text-base md:text-lg relative top-2">
+            <ul className="text-base md:text-lg relative top-4">
               <li className="flex items-center justify-center md:justify-start mb-1 ">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
                 <a href="#" className=" hover:translate-x-2 transition-transform duration-300 text-inter">Our Blog</a>
