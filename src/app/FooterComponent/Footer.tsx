@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
             <h3 className="font-bold text-inter text-lg mb-2 md:text-xl">Contact</h3>
-            <p className="text-base text-inter md:text-lg"><strong className=" text-inter font-bold">Address:</strong><span className="text-sm font-semibold leading-tight"> 502 New Design Str, Melbourne, San Francisco, CA 94110, United States</span></p>
+            <p className="text-base text-inter md:text-lg"><strong className=" text-inter font-bold">Address:</strong><span className="text-sm font-semibold leading-3"> 502 New Design Str, Melbourne, San Francisco, CA 94110, United States</span></p>
             <p className="text-base text-inter md:text-lg"><strong className="font-bold text-inter">Phone:</strong><span className="text-sm font-semibold"> (+01) 123-456-789</span></p>
             <p className="text-base text-inter md:text-lg"><strong className="font-bold text-inter">Email:</strong><span className="text-sm font-semibold leading-tight"> contact@ecom-market.com</span></p>
             <p className="text-base text-inter md:text-lg"><strong className="font-bold text-inter">Hours:</strong>  <span className="text-sm font-semibold"> 8:00 - 17:00, Mon - Sat</span></p>
