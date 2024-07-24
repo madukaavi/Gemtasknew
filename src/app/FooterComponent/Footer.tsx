@@ -16,7 +16,7 @@ const Footer = () => {
             <p className="text-base text-inter md:text-lg"><strong className="font-bold text-inter">Hours:</strong> 8:00 - 17:00, Mon - Sat</p>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
-            <h3 className="font-bold text-lg mb-2 md:text-xl text-inter">Make Money With Us</h3>
+            <h3 className="font-bold text-lg mb-4 md:text-xl text-inter">Make Money With Us</h3>
             <ul className="text-base md:text-lg">
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
@@ -45,7 +45,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
-            <h3 className="font-bold text-lg mb-2 md:text-xl text-inter">Company</h3>
+            <h3 className="font-bold text-lg mb-4 md:text-xl text-inter">Company</h3>
             <ul className="text-base md:text-lg">
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
@@ -74,7 +74,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
-            <h3 className="font-bold text-lg mb-2 md:text-xl text-inter">My Account</h3>
+            <h3 className="font-bold text-lg mb-4 md:text-xl text-inter">My Account</h3>
             <ul className="text-base md:text-lg">
               <li className="flex items-center justify-center md:justify-start mb-1">
                 <IoMdArrowDropright  className="mr-2 text-lg md:text-xl" />
@@ -98,7 +98,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6 text-center md:text-left">
-            <h3 className="font-bold text-lg mb-2 md:text-xl text-inter">App & Payment</h3>
+            <h3 className="font-bold text-lg mb-4 md:text-xl text-inter">App & Payment</h3>
             <p className="text-base md:text-md mb-4 text-inter font-semibold text-inter ">Download our Apps and get extra 15% Discount on your first Order…!</p>
             <p className="text-base md:text-md mb-4 text-inter font-semibold text-inter">Secured Payment Gateways </p>
             <div className="flex justify-center md:justify-start space-x-4 text-base md:text-lg">
