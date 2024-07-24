@@ -55,7 +55,7 @@ const Slider: React.FC = () => {
         />
       </div>
       <div
-        className="relative w-1/4 lg:h-[300px] lg:w-1/4 md:h-[250px] cursor-pointer md:w-[250px] h-full sm:block hidden"
+        className="relative w-1/4 lg:h-[300px] lg:w-1/4 md:h-[250px] cursor-pointer md:w-[250px] h-full sm:block hidden top-8"
         onMouseEnter={() => handleMouseEnter(images[2].src)}
         onMouseLeave={handleMouseLeave}
       >
