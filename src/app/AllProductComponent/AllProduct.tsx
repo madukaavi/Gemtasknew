@@ -9,12 +9,12 @@ function AllProduct() {
 
   return (
     <>
-      <div className="w-full border-2 border-black">
+      <div className="w-full relative bottom-3">
         <div className="w-full items-center justify-center flex mb-2">
-          <h1 className='font-sans text-md font-semibold'>New arrivals</h1>
+          <h1 className='font-inter text-lg font-semibold text-custompinkpr'>New arrivals</h1>
         </div>
         <div className="w-full items-center justify-center flex mb-6">
-          <h1 className='font-sans text-3xl font-bold'>All Products</h1>
+          <h1 className='font-inter text-xl font-bold'>All Products</h1>
         </div>
         
         {/* Desktop View */}
