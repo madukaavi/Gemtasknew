@@ -14,7 +14,7 @@ const ArrivalSlider = () => {
   return (
     <div className="flex flex-wrap gap-10 px-12">
       {cards.map(card => (
-        <div key={card.id} className="w-[300px] h-96 rounded-md shadow-md overflow-hidden">
+        <div key={card.id} className="w-[250px] h-96 rounded-md shadow-md overflow-hidden">
           <img src={card.imageUrl} alt={card.title} className="w-full h-auto" />
           <div className="p-4">
             <h2 className="text-lg font-bold">{card.title}</h2>
