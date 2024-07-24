@@ -42,7 +42,7 @@ const Slider: React.FC = () => {
           alt={images[0].alt}
           layout="fill"
           objectFit="cover"
-          className="blur-sm opacity-70"
+          className="blur-sm opacity-50 w-20 h-20"
         />
       </div>
       <div className="relative w-[300px] lg:w-1/4 md:w-[250px] sm:w-[200px] h-full">
