@@ -1,7 +1,5 @@
 "use client"; 
 import React, { useEffect, useRef, useState } from 'react';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import Image from 'next/image';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const cards = [
@@ -11,37 +9,7 @@ const cards = [
     description: 'Lorem ipsum dolor',
     price: 2600
   },
-  {
-    imgSrc: 'https://s3-alpha-sig.figma.com/img/eb28/ed14/4a340896144a3bdb49af45b3ca0e7ee2?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IPp4myi0L7ipkgNonD4cpeynFlsayywR4XlOMcZzUDSeIobWIjBwcTIyaHCbZE-xA8y5z4P6lngElYjgGpI44YsVyDDAmzrsu6txYppIm7sOebtHIEcIyj275wPxECIlFI65SePpVWwiLcRQFBqK9DiqOD00ek6JxOiii93oph937nf4nILoaUGzUIPRtrzAUOZQGbwunvGtn~LWjNRPHMl5icJx0sC-w8m0Ogy2XpMu58kHHaJHwCw5fadBWQ-T3md2yjKej0QW33GE-QYAalgN~D4RmF~FvqLazQKkDvR2AhezNWrV9tMBm7Pv3Yj7khFSycH7rwWJyUbjGXFRLA__',
-    title: 'Item Name',
-    description: 'Lorem ipsum dolor',
-    price: 2600
-  },
-  {
-    imgSrc: 'https://s3-alpha-sig.figma.com/img/eb28/ed14/4a340896144a3bdb49af45b3ca0e7ee2?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IPp4myi0L7ipkgNonD4cpeynFlsayywR4XlOMcZzUDSeIobWIjBwcTIyaHCbZE-xA8y5z4P6lngElYjgGpI44YsVyDDAmzrsu6txYppIm7sOebtHIEcIyj275wPxECIlFI65SePpVWwiLcRQFBqK9DiqOD00ek6JxOiii93oph937nf4nILoaUGzUIPRtrzAUOZQGbwunvGtn~LWjNRPHMl5icJx0sC-w8m0Ogy2XpMu58kHHaJHwCw5fadBWQ-T3md2yjKej0QW33GE-QYAalgN~D4RmF~FvqLazQKkDvR2AhezNWrV9tMBm7Pv3Yj7khFSycH7rwWJyUbjGXFRLA__',
-    title: 'Item Name',
-    description: 'Lorem ipsum dolor',
-    price: 2600
-  },
-  {
-    imgSrc: 'https://s3-alpha-sig.figma.com/img/eb28/ed14/4a340896144a3bdb49af45b3ca0e7ee2?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IPp4myi0L7ipkgNonD4cpeynFlsayywR4XlOMcZzUDSeIobWIjBwcTIyaHCbZE-xA8y5z4P6lngElYjgGpI44YsVyDDAmzrsu6txYppIm7sOebtHIEcIyj275wPxECIlFI65SePpVWwiLcRQFBqK9DiqOD00ek6JxOiii93oph937nf4nILoaUGzUIPRtrzAUOZQGbwunvGtn~LWjNRPHMl5icJx0sC-w8m0Ogy2XpMu58kHHaJHwCw5fadBWQ-T3md2yjKej0QW33GE-QYAalgN~D4RmF~FvqLazQKkDvR2AhezNWrV9tMBm7Pv3Yj7khFSycH7rwWJyUbjGXFRLA__',
-    title: 'Item Name',
-    description: 'Lorem ipsum dolor',
-    price: 2600
-  },
-  {
-    imgSrc: 'https://s3-alpha-sig.figma.com/img/eb28/ed14/4a340896144a3bdb49af45b3ca0e7ee2?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IPp4myi0L7ipkgNonD4cpeynFlsayywR4XlOMcZzUDSeIobWIjBwcTIyaHCbZE-xA8y5z4P6lngElYjgGpI44YsVyDDAmzrsu6txYppIm7sOebtHIEcIyj275wPxECIlFI65SePpVWwiLcRQFBqK9DiqOD00ek6JxOiii93oph937nf4nILoaUGzUIPRtrzAUOZQGbwunvGtn~LWjNRPHMl5icJx0sC-w8m0Ogy2XpMu58kHHaJHwCw5fadBWQ-T3md2yjKej0QW33GE-QYAalgN~D4RmF~FvqLazQKkDvR2AhezNWrV9tMBm7Pv3Yj7khFSycH7rwWJyUbjGXFRLA__',
-    title: 'Item Name',
-    description: 'Lorem ipsum dolor',
-    price: 2600
-  },
-  {
-    imgSrc: 'https://s3-alpha-sig.figma.com/img/eb28/ed14/4a340896144a3bdb49af45b3ca0e7ee2?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IPp4myi0L7ipkgNonD4cpeynFlsayywR4XlOMcZzUDSeIobWIjBwcTIyaHCbZE-xA8y5z4P6lngElYjgGpI44YsVyDDAmzrsu6txYppIm7sOebtHIEcIyj275wPxECIlFI65SePpVWwiLcRQFBqK9DiqOD00ek6JxOiii93oph937nf4nILoaUGzUIPRtrzAUOZQGbwunvGtn~LWjNRPHMl5icJx0sC-w8m0Ogy2XpMu58kHHaJHwCw5fadBWQ-T3md2yjKej0QW33GE-QYAalgN~D4RmF~FvqLazQKkDvR2AhezNWrV9tMBm7Pv3Yj7khFSycH7rwWJyUbjGXFRLA__',
-    title: 'Item Name',
-    description: 'Lorem ipsum dolor',
-    price: 2600
-  },
-  
+  // ... (other card data)
 ];
 
 const ArrivalSlider: React.FC = () => {
@@ -52,7 +20,7 @@ const ArrivalSlider: React.FC = () => {
     const interval = setInterval(() => {
       if (scrollContainer.current) {
         const containerWidth = scrollContainer.current.clientWidth;
-        const cardWidth = containerWidth / (cards.length > 0 ? cards.length : 1);
+        const cardWidth = 250; // Updated width
         const newIndex = (currentIndex + 1) % cards.length;
         scrollContainer.current.scrollTo({ left: newIndex * cardWidth, behavior: 'smooth' });
         setCurrentIndex(newIndex);
@@ -65,7 +33,7 @@ const ArrivalSlider: React.FC = () => {
   const scrollLeft = () => {
     if (scrollContainer.current) {
       const containerWidth = scrollContainer.current.clientWidth;
-      const cardWidth = containerWidth / (cards.length > 0 ? cards.length : 1);
+      const cardWidth = 250; // Updated width
       const newIndex = Math.max(currentIndex - 1, 0);
       scrollContainer.current.scrollTo({ left: newIndex * cardWidth, behavior: 'smooth' });
       setCurrentIndex(newIndex);
@@ -75,7 +43,7 @@ const ArrivalSlider: React.FC = () => {
   const scrollRight = () => {
     if (scrollContainer.current) {
       const containerWidth = scrollContainer.current.clientWidth;
-      const cardWidth = containerWidth / (cards.length > 0 ? cards.length : 1);
+      const cardWidth = 250; // Updated width
       const newIndex = Math.min(currentIndex + 1, cards.length - 1);
       scrollContainer.current.scrollTo({ left: newIndex * cardWidth, behavior: 'smooth' });
       setCurrentIndex(newIndex);
@@ -85,7 +53,7 @@ const ArrivalSlider: React.FC = () => {
   const handleDotClick = (index: number) => {
     if (scrollContainer.current) {
       const containerWidth = scrollContainer.current.clientWidth;
-      const cardWidth = containerWidth / (cards.length > 0 ? cards.length : 1);
+      const cardWidth = 250; // Updated width
       scrollContainer.current.scrollTo({ left: index * cardWidth, behavior: 'smooth' });
       setCurrentIndex(index);
     }
@@ -95,28 +63,28 @@ const ArrivalSlider: React.FC = () => {
     <div className="relative">
       {/* Navigation buttons desktop view */}
       <div className="hidden md:flex items-center justify-between absolute inset-y-0 left-14 z-10">
-        <button onClick={scrollLeft} className="p-2 text-pink-800 hidden lg:block ">
+        <button onClick={scrollLeft} className="p-2 text-pink-800 hidden lg:block">
           <IoIosArrowBack size={30}/>
         </button>
       </div>
       <div className="flex overflow-x-scroll lg:overflow-x-hidden md:items-center md:justify-center space-x-4 px-4 py-8 snap-x snap-mandatory scrollbar-hidden" ref={scrollContainer}>
         {cards.map((card, index) => (
-          <div key={index} className="flex-shrink-0 w-full md:w-[200px] h-[380px] rounded-md overflow-hidden shadow-lg snap-center relative group">
-            <img className="w-full h-1/1 object-cover transition duration-500 group-hover:blur-sm" src={card.imgSrc} alt={card.title} />
-            <div className="p-4">
-              <div className="font-bold font-inter text-md mb-1 text-center">{card.title}</div>
-              <p className="text-gray-700 text-sm font-inter font-light text-center">{card.description}</p>
+          <div key={index} className="flex-shrink-0 w-[250px] h-[96px] rounded-md overflow-hidden shadow-lg snap-center relative group">
+            <img className="w-full h-full object-cover transition duration-500 group-hover:blur-sm" src={card.imgSrc} alt={card.title} />
+            <div className="p-2">
+              <div className="font-bold font-inter text-sm mb-1 text-center">{card.title}</div>
+              <p className="text-gray-700 text-xs font-inter font-light text-center">{card.description}</p>
               <div className="flex justify-center mt-2 space-x-2">
-                <div className="w-4 h-4 bg-red-600  cursor-pointer"></div>
-                <div className="w-4 h-4 bg-pink-800  cursor-pointer"></div>
-                <div className="w-4 h-4 bg-green-800  cursor-pointer"></div>
+                <div className="w-3 h-3 bg-red-600 cursor-pointer"></div>
+                <div className="w-3 h-3 bg-pink-800 cursor-pointer"></div>
+                <div className="w-3 h-3 bg-green-800 cursor-pointer"></div>
               </div>
               <p className="text-center mt-1 font-inter font-bold">Price: ${card.price}</p>
             </div>
             <div className="absolute inset-0 bg-gray-800 bg-opacity-50 flex flex-col items-center justify-center opacity-0 transition duration-500 group-hover:opacity-100">
               <div className="flex flex-col space-y-2">
-                <button className="border-2 border-pink-600 text-pink-600 hover:bg-pink-800 hover:text-white py-2 px-4 rounded font-sans font-semibold transform translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300">BUY NOW</button>
-                <button className="bg-gradient-to-r hover:bg-pink-200 from-pink-500 to-pink-800 text-white py-2 px-4 rounded font-sans font-semibold transform translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300">ADD TO CART</button>
+                <button className="border-2 border-pink-600 text-pink-600 hover:bg-pink-800 hover:text-white py-1 px-2 rounded font-sans font-semibold transform translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300">BUY NOW</button>
+                <button className="bg-gradient-to-r hover:bg-pink-200 from-pink-500 to-pink-800 text-white py-1 px-2 rounded font-sans font-semibold transform translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -125,7 +93,7 @@ const ArrivalSlider: React.FC = () => {
       {/* Navigation buttons desktop view */}
       <div className="hidden md:flex items-center justify-between absolute inset-y-0 right-24 z-10">
         <button onClick={scrollRight} className="p-2 hidden lg:block text-pink-800">
-          <IoIosArrowForward  className='relative left-10' width={30}  />
+          <IoIosArrowForward size={30} />
         </button>
       </div>
       {/* Dots for mobile view */}
