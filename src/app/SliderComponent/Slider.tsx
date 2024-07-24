@@ -10,16 +10,7 @@ const Slider: React.FC = () => {
     { src: '/Carsoul.png', alt: 'Right Image' }
   ];
 
-  const [hoveredImage, setHoveredImage] = useState<string | null>(null);
   const [currentIndex, setCurrentIndex] = useState(1); // Start with the middle image
-
-  const handleMouseEnter = (imageSrc: string) => {
-    setHoveredImage(imageSrc);
-  };
-
-  const handleMouseLeave = () => {
-    setHoveredImage(null);
-  };
 
   const scrollLeft = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
@@ -31,9 +22,9 @@ const Slider: React.FC = () => {
 
   const getImageClass = (index: number) => {
     if (index === currentIndex) {
-      return "blur-none opacity-100"; // Middle image
+      return "blur-none opacity-100 transition-all duration-500"; // Middle image
     } else {
-      return "blur-sm opacity-90"; // Left and right images
+      return "blur-sm opacity-90 transition-all duration-500"; // Left and right images
     }
   };
 
@@ -41,8 +32,6 @@ const Slider: React.FC = () => {
     <div className="w-full h-[300px] flex cursor-pointer items-center justify-center mt-4 space-x-4">
       <div
         className="relative w-[200px] h-[200px] sm:block hidden top-8 right-20"
-        onMouseEnter={() => handleMouseEnter(images[(currentIndex + 2) % images.length].src)}
-        onMouseLeave={handleMouseLeave}
         onClick={scrollLeft}
       >
         <Image
@@ -55,17 +44,15 @@ const Slider: React.FC = () => {
       </div>
       <div className="relative w-[300px] lg:w-1/4 md:w-[250px] sm:w-[200px] h-full">
         <Image
-          src={hoveredImage || images[currentIndex].src}
+          src={images[currentIndex].src}
           alt="Middle Image"
           layout="fill"
           objectFit="cover"
-          className="blur-none opacity-100"
+          className="blur-none opacity-100 transition-all duration-500"
         />
       </div>
       <div
         className="relative w-[200px] h-[200px] cursor-pointer sm:block left-20 hidden top-8"
-        onMouseEnter={() => handleMouseEnter(images[(currentIndex + 1) % images.length].src)}
-        onMouseLeave={handleMouseLeave}
         onClick={scrollRight}
       >
         <Image
