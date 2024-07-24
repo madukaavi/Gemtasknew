@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from 'react';
-import { FaChevronLeft, FaChevronRight, FaEye, FaHeart, FaInfoCircle, FaShoppingCart } from 'react-icons/fa'; // Import the arrow icons
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; // Import the arrow icons
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const ArrivalSlider = () => {
@@ -19,81 +19,84 @@ const ArrivalSlider = () => {
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({
-        left: -320, // Adjust to card width
-        behavior: 'smooth'
-      });
+      scrollContainerRef.current.scrollBy({ left: -250, behavior: 'smooth' });
     }
-    setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
   };
 
   const scrollRight = () => {
     if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({
-        left: 320, // Adjust to card width
-        behavior: 'smooth'
-      });
+      scrollContainerRef.current.scrollBy({ left: 250, behavior: 'smooth' });
     }
-    setCurrentIndex((prevIndex) => Math.min(prevIndex + 1, cards.length - 1));
+  };
+
+  const handleDotClick = (index: number) => {
+    setCurrentIndex(index);
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTo({ left: index * window.innerWidth, behavior: 'smooth' });
+    }
   };
 
   return (
-    <div className="relative w-full">
-      <div className="absolute top-1/2 left-4 transform -translate-y-1/2">
-        <button
-          onClick={scrollLeft}
-          disabled={currentIndex === 0}
-          className={`p-2 bg-gray-800 text-white rounded-full ${currentIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
-        >
-          <IoIosArrowBack size={20} />
-        </button>
-      </div>
-
-      <div className="flex overflow-x-auto no-scrollbar space-x-4" ref={scrollContainerRef}>
-        {cards.map((card) => (
+    <div className="bg-white flex justify-center items-center p-4 relative">
+      {/* Mobile view with dots */}
+      <div className="sm:hidden w-full flex flex-col items-center">
+        <div className="w-full overflow-hidden">
           <div
-            key={card.id}
-            className="min-w-[320px] h-[480px] rounded-md bg-white shadow-md relative group"
+            ref={scrollContainerRef}
+            className="flex transition-transform duration-300 ease-in-out touch-none"
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
-            <img src={card.imageUrl} alt={card.title} className="w-full h-full object-cover rounded-md" />
-            <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100">
-              <div className="flex space-x-4 mb-4">
-                <button className="p-2 bg-gray-800 bg-opacity-80 rounded-full">
-                  <FaEye />
-                </button>
-                <button className="p-2 bg-gray-800 bg-opacity-80 rounded-full">
-                  <FaShoppingCart />
-                </button>
-                <button className="p-2 bg-gray-800 bg-opacity-80 rounded-full">
-                  <FaHeart />
-                </button>
+            {cards.map((card, index) => (
+              <div key={index} className="flex-shrink-0 w-full">
+                <div className="w-[250px] h-80 rounded-md shadow-md bg-bgcolorcard overflow-hidden">
+                  <img src={card.imageUrl} alt={card.title} className="w-full h-auto" />
+                  <div className="p-4">
+                    <h2 className="text-lg font-bold">{card.title}</h2>
+                  </div>
+                </div>
               </div>
-              <button className="p-2 bg-gray-800 bg-opacity-80 rounded-full">
-                <FaInfoCircle />
-              </button>
-            </div>
-            <div className="absolute bottom-4 left-4 text-white group-hover:opacity-100 opacity-0 transition-all duration-300">
-              <h2 className="text-lg font-semibold">Main Heading</h2>
-              <h3 className="text-sm font-medium">Subheading</h3>
-              <p className="text-sm">Description paragraph goes here. A brief description of the product or card.</p>
-              <p className="text-lg font-bold mt-2">$99.99</p>
-              <div className="flex space-x-2 mt-2">
-                <button className="w-6 h-6 bg-red-500 rounded-full border-2 border-white"></button>
-                <button className="w-6 h-6 bg-blue-500 rounded-full border-2 border-white"></button>
-                <button className="w-6 h-6 bg-green-500 rounded-full border-2 border-white"></button>
-              </div>
-            </div>
+            ))}
           </div>
-        ))}
+        </div>
+        <div className="flex space-x-2 mt-4">
+          {cards.map((_, index) => (
+            <button
+              key={index}
+              className={`h-2 w-2 rounded-full border-[1px] ${index === currentIndex ? 'bg-customPink' : 'bg-transparent'}`}
+              onClick={() => handleDotClick(index)}
+            />
+          ))}
+        </div>
       </div>
 
-      <div className="absolute top-1/2 right-4 transform -translate-y-1/2">
+      {/* Tablet and Desktop view with horizontal scroll and arrows */}
+      <div className="hidden sm:flex items-center relative w-full px-40">
         <button
-          onClick={scrollRight}
-          disabled={currentIndex === cards.length - 1}
-          className={`p-2 bg-gray-800 text-white rounded-full ${currentIndex === cards.length - 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
+          className="absolute left-0 z-10 p-2  text-black rounded-full focus:outline-none"
+          onClick={scrollLeft}
         >
-          <IoIosArrowForward size={20} />
+          <IoIosArrowBack size={30} className='relative left-10' />
+        </button>
+        <div
+          ref={scrollContainerRef}
+          className="flex overflow-x-auto space-x-6 scrollbar-hide w-full"
+        >
+          {cards.map((card, index) => (
+            <div key={index} className="flex-shrink-0 w-auto">
+              <div className="w-[230px] h-80 rounded-md shadow-md bg-bgcolorcard overflow-hidden">
+                <img src={card.imageUrl} alt={card.title} className="w-[100px] h-[100px]" />
+                <div className="p-4">
+                  <h2 className="text-lg font-bold">{card.title}</h2>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <button
+          className="absolute right-0 z-10 p-2  text-black rounded-full focus:outline-none"
+          onClick={scrollRight}
+        >
+          <IoIosArrowForward size={30} className='relative right-10' />
         </button>
       </div>
     </div>
