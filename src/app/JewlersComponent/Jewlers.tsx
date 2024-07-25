@@ -44,7 +44,7 @@ const Jewlers = () => {
     </div>
     <div className="relative w-full   h-[310px] overflow-hidden rounded-md shadow-md bottom-16 z-10 ">
   <img
-    src="https://s3-alpha-sig.figma.com/img/b30b/fa3f/266c98b96164dabe95f5b047b3705e50?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=keqMWzyVUPIys6Gfm57FrSVpxSDXC4Uk9ctrLehxYcOLKaqAUe1apDKg1M4SU9vfaE2I4JWmSek~~1tF0Xtv33LEoKevWGPsUfnYO1s9ywsBQ2qhcxB0I1clRekZ6-QooOtKxmzRhL2~VmzVFuTKlkos1kMl7JVOX5xR5cm~shqqBnrIn8XL1~jZKHs0iYP5PbykjeZWOw0WVoQfi7qpom2yN4wCBJ26Wo5xJ1vm5DI2yIyS2Dlsgh7WppiDFc2-7oKISeN2mndHyknufZUaILOfd2yy6JJqykD57pp5TkNKfzsXQVlCC82sHYpkpUEmoZ7cxSYIDaqEwbW0hIN3qg__"
+    src="https://s3-alpha-sig.figma.com/img/e283/ad73/eceb6bf3dd5be19eebe43f3981fcaaf3?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=drpUBEat3zeS1iHDUk9cMUnynKG-7goX~53FqYK6k4NaXGZLXYL2qQQJ9S7Yq9jx459qQ-Ayw9I0Bl1sf5mkj-nvf0vjQHQLE4boK6i88Nv~wCbnyZzq5VvUVCisPjY0Jvpz~dvWIYi6Zsl15mNiB24ieemNsg7XjCi~WfcmdksVy4FbAz9szrE03sQZlYD7uD0DsEajNDjkAa8Ei-HpUJgo5L3pkN0sShbrqfdYestPQ0e-pUa-PIuRKzY2Up6ZCD~K6hebq7fxmyCHMOiri8pi5Qm5QhYwtUkMTfZJtP8UnwfKihYPGCGD-s54KVDQHVhLxENG3VBce4o8CbF6AA__"
     alt="Card Image"
     className="w-full h-full object-cover"
   />
@@ -52,8 +52,7 @@ const Jewlers = () => {
     <h3 className="text-sm font-light">CATEGORIES</h3>
   </div>
   <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-4 text-white">
-    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">Timeless Gem For</h2>
-    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">Every Occasion</h2>
+    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">Gemstones Jewels That Enchant</h2>
     <p className="text-xs sm:text-sm lg:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consectetur pariatur hic sapiente eos eius </p>
     <button className="mt-2 py-1 px-4 bg-gradient-to-r hover:bg-pink-200 from-pink-500 flex items-center to-pink-800 text-white rounded-full">
       Go To Categories <FaEye className="ml-2" />
