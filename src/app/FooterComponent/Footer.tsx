@@ -112,8 +112,8 @@ const Footer = () => {
           <div className="w-full  h-auto flex items-start justify-start relative bottom-5 gap-2 mobile-320:top-10">
             <TiSocialFacebook size={35} className='text-blue-700' />
             <FaGooglePlusG  size={35} className='text-blue-700'/>
-            <FaTwitter size={25}  className='text-blue-700 '/>
-            <FaPinterestP size={25}  className='text-blue-700 '/>
+            <FaTwitter size={25}  className='text-blue-700 relative top-1 '/>
+            <FaPinterestP size={25}  className='text-blue-700  relative top-1'/>
 
 
             </div>
