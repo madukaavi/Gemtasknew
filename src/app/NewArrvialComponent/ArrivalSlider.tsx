@@ -114,18 +114,18 @@ const ArrivalSlider = () => {
                     <button className="w-5 h-5 bg-green-500 border-2 border-white"></button>
                   </div>
                   <div className=" flex opacity-0 relative  group-hover:opacity-100 top-16 ">
-                    <button className='bg-blue-500 relative   right-2  hover:bg-blue-700   text-white  py-2 px-2 text-[13px] font-semibold max-w-full'>LEARN MORE</button>
-                    <button className='bg-blue-500 relative left-2 hover:bg-blue-700 text-white  py-2 px-2 text-[13px] font-semibold'>ADD TO CART</button>
+                    <button className='bg-blue-500 relative   right-2  hover:bg-blue-700   text-white  py-2 px-2 text-[12px] font-semibold max-w-full'>LEARN MORE</button>
+                    <button className='bg-blue-500 relative left-2 hover:bg-blue-700 text-white  py-2 px-2 text-[12px] font-semibold'>ADD TO CART</button>
                     </div>
                   {/* Icons shown on hover */}
-                  <div className="absolute bottom-1 left-0 right-0 flex justify-center   items-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mb-12">
-                    <button className="w-8 h-8 flex items-center justify-center border-[1px] border-red-500 text-red-500 rounded-full">
+                  <div className="absolute bottom-2 left-0 right-0 flex justify-center   items-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mb-12">
+                    <button className="w-8 h-8 flex items-center justify-center border-[1px] border-customPink text-customPink rounded-full">
                       <FaCheck/>
                     </button>
-                    <button className="w-8 h-8 flex items-center justify-center border-[1px] border-red-500 text-red-500 rounded-full">
+                    <button className="w-8 h-8 flex items-center justify-center border-[1px] border-customPink text-customPink rounded-full">
                       <FaEye />
                     </button>
-                    <button className="w-8 h-8 flex items-center justify-center border-[1px] border-red-500 text-red-500 rounded-full">
+                    <button className="w-8 h-8 flex items-center justify-center border-[1px] border-customPink text-customPink rounded-full">
                       <FaHeart/>
                     </button>
                   </div>
