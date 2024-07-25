@@ -1,6 +1,7 @@
 "use client"; 
 import { FaEye } from "react-icons/fa"
 import Image from 'next/image';
+import ArrivalSlider from "../NewArrvialComponent/ArrivalSlider";
 const Jewlers = () => {
 
   return (
@@ -37,34 +38,7 @@ const Jewlers = () => {
   </div>
   <div className="flex gap-5 relative bottom-3  lg:bottom-0">
     <div className="w-[140px] h-[320px] lg:w-[200px] lg:h-[300px] shadow-lg z-30 rounded-md bg-gradient-to-t from-gray-200 to-transparent ">
-    <img
-    src="https://s3-alpha-sig.figma.com/img/eb28/ed14/4a340896144a3bdb49af45b3ca0e7ee2?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IPp4myi0L7ipkgNonD4cpeynFlsayywR4XlOMcZzUDSeIobWIjBwcTIyaHCbZE-xA8y5z4P6lngElYjgGpI44YsVyDDAmzrsu6txYppIm7sOebtHIEcIyj275wPxECIlFI65SePpVWwiLcRQFBqK9DiqOD00ek6JxOiii93oph937nf4nILoaUGzUIPRtrzAUOZQGbwunvGtn~LWjNRPHMl5icJx0sC-w8m0Ogy2XpMu58kHHaJHwCw5fadBWQ-T3md2yjKej0QW33GE-QYAalgN~D4RmF~FvqLazQKkDvR2AhezNWrV9tMBm7Pv3Yj7khFSycH7rwWJyUbjGXFRLA__"
-    alt="Card Image"
-    className="w-[200px] h-[150px]  object-cover"
-  />
-  <div className="flex w-full items-center justify-center"><h3 className="font-sans font-semibold text-pink-600">Catagory</h3></div>
-  <div className="flex w-full items-center justify-center"><h3 className="font-sans font-semibold text-black mb-1">Item Name</h3></div>
-  <div className="flex w-full items-center justify-center"><h3 className="font-sans text-[10px] font-semibold text-black mb-1 p-2">Lorem ipsum, dolor sit amet <br></br> consectetur adipisicing elit. </h3></div>
-  <div className="flex justify-center mt-2 space-x-2">
-                <div className="w-4 h-4 bg-red-600 rounded-full cursor-pointer"></div>
-                <div className="w-4 h-4 bg-pink-800 rounded-full cursor-pointer"></div>
-                <div className="w-4 h-4 bg-green-800 rounded-full cursor-pointer"></div>
-              </div>
-    </div>
-    <div className="w-[140px] h-[320px] lg:w-[200px] lg:h-[300px] shadow-lg z-30  rounded-md bg-gradient-to-t from-gray-200 to-transparent ">
-    <img
-    src="https://s3-alpha-sig.figma.com/img/eb28/ed14/4a340896144a3bdb49af45b3ca0e7ee2?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IPp4myi0L7ipkgNonD4cpeynFlsayywR4XlOMcZzUDSeIobWIjBwcTIyaHCbZE-xA8y5z4P6lngElYjgGpI44YsVyDDAmzrsu6txYppIm7sOebtHIEcIyj275wPxECIlFI65SePpVWwiLcRQFBqK9DiqOD00ek6JxOiii93oph937nf4nILoaUGzUIPRtrzAUOZQGbwunvGtn~LWjNRPHMl5icJx0sC-w8m0Ogy2XpMu58kHHaJHwCw5fadBWQ-T3md2yjKej0QW33GE-QYAalgN~D4RmF~FvqLazQKkDvR2AhezNWrV9tMBm7Pv3Yj7khFSycH7rwWJyUbjGXFRLA__"
-    alt="Card Image"
-    className="w-[200px] h-[150px]  object-cover"
-  />
-  <div className="flex w-full items-center justify-center"><h3 className="font-sans font-semibold text-pink-600">Catagory</h3></div>
-  <div className="flex w-full items-center justify-center"><h3 className="font-sans font-semibold text-black mb-1">Item Name</h3></div>
-  <div className="flex w-full items-center justify-center"><h3 className="font-sans text-[10px] font-semibold text-black mb-1 p-2">Lorem ipsum, dolor sit amet <br></br> consectetur adipisicing elit. </h3></div>
-  <div className="flex justify-center mt-2 space-x-2">
-                <div className="w-4 h-4 bg-red-600 rounded-full cursor-pointer"></div>
-                <div className="w-4 h-4 bg-pink-800 rounded-full cursor-pointer"></div>
-                <div className="w-4 h-4 bg-green-800 rounded-full cursor-pointer"></div>
-                </div>
+    <ArrivalSlider/>
     </div>
     </div>
     </div>
