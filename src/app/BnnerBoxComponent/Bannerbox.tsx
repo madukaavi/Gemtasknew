@@ -10,9 +10,9 @@ const BannerBox = () => {
         className="w-full h-full object-cover"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 bg-black bg-opacity-50">
-        <h2 className="text-5xl font-bold mb-4 font inter mobile-320:text-3x1">Subscribe & Get 10% Discount</h2>
-        <p className="text-5xl  font-semibold font inter relative right-64 mobile-320:text-3x1">Get E-mail updates about our latest shop</p>
-        <p className="text-5x1  font-semibold font inter relative right-80 mobile-320:text-3x1">and special offers.</p>
+        <h2 className="text-5xl font-bold mb-4 font inter ">Subscribe & Get 10% Discount</h2>
+        <p className="text-5xl  font-semibold font inter relative right-64">Get E-mail updates about our latest shop</p>
+        <p className="text-5x1  font-semibold font inter relative right-80">and special offers.</p>
         <div className="flex flex-col items-center w-full max-w-md">
           <div className="flex w-full relative">
             <input
