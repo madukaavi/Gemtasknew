@@ -2,6 +2,7 @@
 import React from 'react';
 import { FaCcVisa, FaCcMastercard, FaCcPaypal, FaChevronRight } from 'react-icons/fa';
 import { IoMdArrowDropright } from 'react-icons/io';
+import { TiSocialFacebook } from 'react-icons/ti';
 
 const Footer = () => {
   return (
