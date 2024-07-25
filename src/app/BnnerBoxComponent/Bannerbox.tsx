@@ -17,7 +17,7 @@ const BannerBox = () => {
           <div className="flex w-full relative">
             <input
               type="text"
-              placeholder="Search..."
+              placeholder=""
               className=" w-[350px]  py-2 rounded-full border-none outline-none relative bottom-12 left-80"
             />
           </div>
