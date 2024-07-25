@@ -26,7 +26,7 @@ const Jewlers = () => {
   <div className="absolute top-0 left-3 p-2 bg-opacity-60 text-white">
     <h3 className="text-sm font-light">CATEGORIES</h3>
   </div>
-  <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-4 text-white">
+  <div className="absolute bottom-0 left-0 w-full right-10 bg-gradient-to-t from-black to-transparent p-4 text-white">
     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">Timeless Gem For</h2>
     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">Every Occasion</h2>
     <p className="text-xs sm:text-sm lg:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consectetur pariatur hic sapiente eos eius quas veritatis harum odio mollitia laboriosam ex tenetur eum deleniti quo reiciendis vero, ad corrupti!</p>
