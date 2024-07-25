@@ -93,7 +93,7 @@ const ArrivalSlider = () => {
           className="absolute left-0 z-10 p-2 text-black rounded-full focus:outline-none"
           onClick={scrollLeft}
         >
-          <IoIosArrowBack size={30} className='relative left-10 text-customPink' />
+          <IoIosArrowBack size={30} className='relative left-10 ' />
         </button>
         <div
           ref={scrollContainerRef}
@@ -114,8 +114,8 @@ const ArrivalSlider = () => {
                     <button className="w-5 h-5 bg-green-500 border-2 border-white"></button>
                   </div>
                   <div className=" flex opacity-0 relative  group-hover:opacity-100 top-16 ">
-                    <button className='bg-gradient-to-r from-customPink to-custompinknew   right-2     text-white  py-2 px-2 text-[11px] font-semibold max-w-full'>LEARN MORE</button>
-                    <button className='bg-gradient-to-r from-customPink to-custompinknew relative left-2  text-white  py-2 px-2 text-[11px] font-semibold'>ADD TO CART</button>
+                    <button className='bg-gradient-to-r from-customPink to-custompinknew   right-2     text-white  py-2 px-2 text-[11px] font-semibold max-w-full text-inter'>LEARN MORE</button>
+                    <button className='bg-gradient-to-r from-customPink to-custompinknew relative left-2  text-white  py-2 px-2 text-[11px] font-semibold text-inter'>ADD TO CART</button>
                     </div>
                   {/* Icons shown on hover */}
                   <div className="absolute bottom-2 left-0 right-0 flex justify-center   items-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mb-12">
@@ -138,7 +138,7 @@ const ArrivalSlider = () => {
           className="absolute right-0 z-10 p-2 text-black rounded-full focus:outline-none"
           onClick={scrollRight}
         >
-          <IoIosArrowForward size={30} className='relative right-10 text-customPink' />
+          <IoIosArrowForward size={30} className='relative right-10 ' />
         </button>
       </div>
     </div>
