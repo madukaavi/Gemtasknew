@@ -108,7 +108,7 @@ const Footer = () => {
               <a href="https://example.com/paypal"><img className='h-[20px] w-[30px]' src="https://firebasestorage.googleapis.com/v0/b/gemgem-b7c15.appspot.com/o/logos_amex.png?alt=media&token=248c7682-01bf-4179-b8ce-c80054823b44" alt="Paypal" /></a>
             </div>
           </div>
-          <div className="w-full border-2 border-black h-auto flex items-start justify-items-start"><TiSocialFacebook />
+          <div className="w-full border-2 border-black h-auto flex items-start justify-items-start"><TiSocialFacebook size={35} />
             </div>
         </div>
       </div>
