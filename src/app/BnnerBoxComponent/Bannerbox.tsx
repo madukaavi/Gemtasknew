@@ -10,10 +10,10 @@ const BannerBox = () => {
         className="w-full h-full object-cover"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 bg-black bg-opacity-50">
-        <h2 className="text-5xl font-bold mb-4">Subscribe & Get 10% Discount</h2>
-        <p className="text-3x1 mb-6">Get E-mail updates about our latest shop <br></br>and special offers.</p>
+        <h2 className="text-5xl font-bold mb-4 font inter">Subscribe & Get 10% Discount</h2>
+        <p className="text-3x1 mb-6 font-semibold font inter">Get E-mail updates about our latest shop <br></br>and special offers.</p>
         <div className="flex flex-col items-center w-full max-w-md">
-          <div className="flex w-full">
+          <div className="flex w-full relative bottom-8 left-10">
             <input
               type="text"
               placeholder="Search..."
