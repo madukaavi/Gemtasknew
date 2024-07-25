@@ -109,11 +109,11 @@ const Footer = () => {
               <a href="https://example.com/paypal"><img className='h-[20px] w-[30px]' src="https://firebasestorage.googleapis.com/v0/b/gemgem-b7c15.appspot.com/o/logos_amex.png?alt=media&token=248c7682-01bf-4179-b8ce-c80054823b44" alt="Paypal" /></a>
             </div>
           </div>
-          <div className="w-full  h-auto flex items-start relative bottom-5 gap-2">
+          <div className="w-full  h-auto flex items-start justify-start relative bottom-5 gap-2">
             <TiSocialFacebook size={35} className='text-blue-700' />
             <FaGooglePlusG  size={35} className='text-blue-700'/>
-            <FaTwitter size={25}  className='text-blue-700 relative top-3'/>
-            <FaPinterestP size={25}  className='text-blue-700 relative top-3'/>
+            <FaTwitter size={20}  className='text-blue-700 '/>
+            <FaPinterestP size={20}  className='text-blue-700 '/>
 
 
             </div>
