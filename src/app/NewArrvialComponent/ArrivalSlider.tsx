@@ -54,7 +54,7 @@ const ArrivalSlider = () => {
                 <div className="w-[250px] h-96 rounded-md shadow-md bg-bgcolorcard overflow-hidden">
                   <img src={card.imageUrl} alt={card.title} className="w-full h-auto" />
                   <div className="p-4">
-                    <h2 className="text-md font-semibold text-center">{card.title}</h2>
+                    <h2 className="text-md font-semibold text-center text-customPink">{card.title}</h2>
                     <h2 className="text-md font-semibold text-center">{card.title2}</h2>
                     {/* Hidden paragraph */}
                     <p className="text-xs font-medium font-inter text-center top-11 relative group-hover:hidden">Description paragraph goes here.Description paragraph .</p>
@@ -104,7 +104,7 @@ const ArrivalSlider = () => {
               <div className="w-[227px] h-[338px] shadow-md bg-bgcolorcard overflow-hidden">
                 <img src={card.imageUrl} alt={card.title} className="w-[150px] h-[150px] relative bottom-4 left-10" />
                 <div className="p-4 relative bottom-9">
-                  <h4 className="text-[14px] font-semibold text-center font-inter relative top-12">{card.title}</h4>
+                  <h4 className="text-[14px] font-semibold text-center text-customPink font-inter relative top-12">{card.title}</h4>
                   <h4 className="text-[14px] font-semibold text-center font-inter relative top-2 ">{card.title2}</h4>
                   <p className="text-xs font-medium font-inter text-center top-11 relative group-hover:hidden">Description paragraph goes here.Description paragraph .</p>
                   <p className="text-md font-bold mt-2 font-inter group-hover:top-14 text-center relative top-12">Rs2000.00</p>
