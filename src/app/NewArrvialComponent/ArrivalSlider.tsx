@@ -52,7 +52,7 @@ const ArrivalSlider = () => {
             {cards.map((card, index) => (
               <div key={index} className="flex-shrink-0 w-full relative group">
                 <div className="w-[25px] h-96 rounded-md shadow-md bg-bgcolorcard overflow-hidden">
-                  <img src={card.imageUrl} alt={card.title} className="w-[100px] h-[100px]" />
+                  <img src={card.imageUrl} alt={card.title} className="w-[250px] h-[100px]" />
                   <div className="p-4">
                     <h2 className="text-md font-semibold text-center text-customPink">{card.title}</h2>
                     <h2 className="text-md font-semibold text-center">{card.title2}</h2>
