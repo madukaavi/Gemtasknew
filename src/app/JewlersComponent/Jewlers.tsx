@@ -24,13 +24,13 @@ const Jewlers = () => {
     className="w-full h-full object-cover"
   />
   <div className="absolute top-0 left-3 p-2 bg-opacity-60 text-white">
-    <h3 className="text-sm font-light">CATEGORIES</h3>
+    <h3 className="text-sm font-light relative top-5">CATEGORIES</h3>
   </div>
   <div className="absolute bottom-0 left-0 w-full right-10 bg-gradient-to-t from-black to-transparent p-4 text-white">
-    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">Timeless Gem For</h2>
-    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">Every Occasion</h2>
-    <p className="text-xs sm:text-sm lg:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consectetur pariatur hic sapiente eos eius quas veritatis harum odio mollitia laboriosam ex tenetur eum deleniti quo reiciendis vero, ad corrupti!</p>
-    <button className="mt-2 py-1 px-4 bg-gradient-to-r hover:bg-pink-200 from-pink-500 flex items-center to-pink-800 text-white rounded-full">
+    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold relative bottom-8">Timeless Gem For</h2>
+    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2 relative bottom-8 left-8">Every Occasion</h2>
+    <p className="text-xs sm:text-sm lg:text-base relative bottom-8 left-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consectetur pariatur hic sapiente eos eius quas veritatis harum odio mollitia laboriosam ex tenetur eum deleniti quo reiciendis vero, ad corrupti!</p>
+    <button className="mt-2 py-1 px-4 bg-gradient-to-r left-8 relative bottom-8 hover:bg-pink-200 from-pink-500 flex items-center to-pink-800 text-white rounded-full">
       Go To Categories <FaEye className="ml-2" />
     </button>
   </div>
