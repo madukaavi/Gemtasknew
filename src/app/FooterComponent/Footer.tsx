@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
-import { FaCcVisa, FaCcMastercard, FaCcPaypal, FaChevronRight } from 'react-icons/fa';
+import { FaCcVisa, FaCcMastercard, FaCcPaypal, FaChevronRight, FaTwitter, FaPinterestP } from 'react-icons/fa';
+import { FaGooglePlusG } from 'react-icons/fa6';
 import { IoMdArrowDropright } from 'react-icons/io';
 import { TiSocialFacebook } from 'react-icons/ti';
 
@@ -108,7 +109,13 @@ const Footer = () => {
               <a href="https://example.com/paypal"><img className='h-[20px] w-[30px]' src="https://firebasestorage.googleapis.com/v0/b/gemgem-b7c15.appspot.com/o/logos_amex.png?alt=media&token=248c7682-01bf-4179-b8ce-c80054823b44" alt="Paypal" /></a>
             </div>
           </div>
-          <div className="w-full border-2 border-black h-auto flex items-start justify-items-start"><TiSocialFacebook size={35} />
+          <div className="w-full border-2 border-black h-auto flex items-start justify-items-start gap-2">
+            <TiSocialFacebook size={35} />
+            <FaGooglePlusG  size={35}/>
+            <FaTwitter size={35} />
+            <FaPinterestP size={35} />
+
+
             </div>
         </div>
       </div>
