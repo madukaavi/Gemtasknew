@@ -11,13 +11,13 @@ const BannerBox = () => {
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 bg-black bg-opacity-50">
         <h2 className="text-5xl font-bold mb-4 font inter">Subscribe & Get 10% Discount</h2>
-        <p className="text-3x1 mb-6 font-semibold font inter relative right-10">Get E-mail updates about our latest shop <br></br>and special offers.</p>
+        <p className="text-3x1 mb-6 font-semibold font inter relative right-20">Get E-mail updates about our latest shop <br></br>and special offers.</p>
         <div className="flex flex-col items-center w-full max-w-md">
           <div className="flex w-full relative">
             <input
               type="text"
               placeholder="Search..."
-              className=" w-[150px]  py-2 rounded-full border-none outline-none relative bottom-10 left-24"
+              className=" w-[300px]  py-2 rounded-full border-none outline-none relative bottom-12 left-52"
             />
           </div>
         </div>
