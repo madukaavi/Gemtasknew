@@ -18,7 +18,7 @@ const BannerBox = () => {
             <input
               type="text"
               placeholder="Search Here"
-              className=" w-[250px]  py-2 rounded-full border-none outline-none relative bottom-12 left-80"
+              className=" w-[250px]  py-2 text-center text-inter rounded-full border-none outline-none relative bottom-12 left-80"
             />
           </div>
         </div>
