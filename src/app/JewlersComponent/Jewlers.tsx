@@ -38,7 +38,7 @@ const Jewlers = () => {
   </div>
   <div className="flex gap-5 relative bottom-3  lg:bottom-0">
     <div className="w-[140px] h-[320px] lg:w-[200px] lg:h-[300px] shadow-lg z-30 rounded-md bg-gradient-to-t from-gray-200 to-transparent ">
-    <ArrivalSlider/>
+   
     </div>
     </div>
     </div>
