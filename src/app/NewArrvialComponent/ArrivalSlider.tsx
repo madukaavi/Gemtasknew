@@ -118,7 +118,7 @@ const ArrivalSlider = () => {
                     <button className='bg-gradient-to-r from-customPink to-custompinknew relative left-2  text-white  py-2 px-2 text-[11px] font-semibold text-inter'>ADD TO CART</button>
                     </div>
                   {/* Icons shown on hover */}
-                  <div className="absolute bottom-2 left-0 right-0 flex justify-center   items-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mb-12">
+                  <div className="absolute bottom-1 left-0 right-0 flex justify-center   items-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mb-12">
                     <button className="w-8 h-8 flex items-center justify-center border-[1px] border-customPink text-customPink rounded-full">
                       <FaCheck/>
                     </button>
