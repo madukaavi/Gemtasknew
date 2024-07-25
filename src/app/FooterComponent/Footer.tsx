@@ -100,7 +100,6 @@ const Footer = () => {
             </ul>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/6 mb-6">
-            <h3 className="font-bold text-lg mb-5 md:text-xl">Follow Us</h3>
             <ul className="flex space-x-4">
               <li><a href="#"><FaTwitter className="text-2xl hover:text-customPink transition duration-300"/></a></li>
               <li><a href="#"><TiSocialFacebook className="text-2xl hover:text-customPink transition duration-300"/></a></li>
